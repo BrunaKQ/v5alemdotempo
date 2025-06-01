@@ -34,8 +34,8 @@ export default function EmilieCompletePage() {
                   <Image
                     src="/images/emilie-1.jpg"
                     alt="Mary Shelley jovem"
-                    width={480}
-                    height={600}
+                    width={512}
+                    height={768}
                     className="rounded-lg"
                   />
                 </div>

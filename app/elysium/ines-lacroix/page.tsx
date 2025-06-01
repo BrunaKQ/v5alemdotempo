@@ -1,7 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowLeft, Crown, Clock, Users, Scroll, MessageCircleWarning } from "lucide-react"
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { SiteHeader } from "@/components/site-header"
@@ -12,23 +11,25 @@ export default function InesLaCroixPage() {
     <div className="flex min-h-screen flex-col bg-black text-white">
       <SiteHeader />
       <main className="flex-1">
+        {/* Cabeçalho com imagem de fundo */}
         <div className="relative h-[300px] w-full overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-90" />
-         <div className="relative h-[600px] w-full overflow-hidden">
-            <Image
-              src="/images/Capa-Ines.jpg"
-              alt=""
-              fill
-              priority
-              className="object-cover object-center"
-            />
-          </div>
+          {/* Gradiente escuro para texto destacado */}
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-10" />
+
+          {/* Imagem de fundo */}
+          <div
+            className="absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: "url('/images/Capa-Ines.jpeg')" }}
+          />
+
+          {/* Texto sobreposto */}
           <div className="absolute bottom-0 left-0 p-8">
             <h1 className="font-serif text-5xl font-bold text-silver-200">Inês LaCroix</h1>
             <p className="mt-2 text-xl text-crimson-500">A Príncipe de Ferro</p>
           </div>
         </div>
 
+        {/* Conteúdo principal da página */}
         <div className="mx-auto max-w-5xl px-4 py-12 sm:px-6 lg:px-8">
           <Link href="/elysium" className="mb-8 inline-flex items-center text-sm text-silver-200 hover:text-amber-400">
             <ArrowLeft className="mr-2 h-4 w-4" />
@@ -36,18 +37,17 @@ export default function InesLaCroixPage() {
           </Link>
 
           <div className="grid gap-8 md:grid-cols-3">
-            {/* Sidebar with character info */}
+            {/* Barra lateral com informações do personagem */}
             <div className="space-y-6">
               <div className="overflow-hidden rounded-lg">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-KdaiWEXUt3gRCMhmzRy2KlZ8H7SBmu.png"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-KdaiWEXUt3gRCMhmzRy2KlZ8H7SBmu.png" 
                   alt="Inês LaCroix"
                   width={400}
                   height={500}
                   className="w-full rounded-lg object-cover"
                 />
               </div>
-
               <Card className="bg-midnight-700 text-gray-200">
                 <CardHeader>
                   <CardTitle className="font-serif text-xl text-silver-300">Informações</CardTitle>
@@ -110,7 +110,7 @@ export default function InesLaCroixPage() {
               </Card>
             </div>
 
-            {/* Main content */}
+            {/* Conteúdo textual principal */}
             <div className="md:col-span-2 space-y-8">
               <Card className="bg-midnight-700 text-gray-200">
                 <CardHeader>
