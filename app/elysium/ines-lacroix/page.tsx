@@ -14,10 +14,15 @@ export default function InesLaCroixPage() {
       <main className="flex-1">
         <div className="relative h-[300px] w-full overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-90" />
-          <div
-            className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: "url('/https://cdnb.artstation.com/p/assets/images/images/047/526/511/large/alice-kiosev-elysium-bloodhunt-alicekiosev-03.jpg?1647815026?height=600&width=1200')" }}
-          />
+         <div className="relative h-[600px] w-full overflow-hidden">
+            <Image
+              src="/images/Capa-Ines.jpg"
+              alt=""
+              fill
+              priority
+              className="object-cover object-center"
+            />
+          </div>
           <div className="absolute bottom-0 left-0 p-8">
             <h1 className="font-serif text-5xl font-bold text-silver-200">Inês LaCroix</h1>
             <p className="mt-2 text-xl text-crimson-500">A Príncipe de Ferro</p>
