@@ -16,7 +16,7 @@ export default function SebastianWestPage() {
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-10" />
           <div
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: "url('/images/capa-sebastian-west.jpeg')" }}
+            style={{ backgroundImage: "url('/images/capa-sebastian.jpg')" }}
           />
           <div className="absolute bottom-0 left-0 p-8">
             <h1 className="font-serif text-5xl font-bold text-silver-200">Sebastian West</h1>
