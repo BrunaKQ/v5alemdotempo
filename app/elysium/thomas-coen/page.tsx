@@ -59,7 +59,7 @@ export default function ThomasCoenPage() {
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-gray-400">Abraço:</span>
-                    <span className="text-silver-300">1700 (Nova Inglaterra colonial)</span>
+                    <span className="text-silver-300">1700 (Nova Inglaterra)</span>
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-gray-400">Posição:</span>
