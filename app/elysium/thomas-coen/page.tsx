@@ -16,7 +16,7 @@ export default function ThomasCoenPage() {
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-10" />
           <div
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: "url('/images/Capa-Thomas.jpeg')" }}
+            style={{ backgroundImage: "url('/images/capa-thomas-coen.jpeg')" }}
           />
           <div className="absolute bottom-0 left-0 p-8">
             <h1 className="font-serif text-5xl font-bold text-silver-200">Thomas Coen</h1>
@@ -35,7 +35,7 @@ export default function ThomasCoenPage() {
             <div className="space-y-6">
               <div className="overflow-hidden rounded-lg">
                 <Image
-                  src="https://via.placeholder.com/400x500?text=Thomas+Coen"
+                  src="/images/image.webp"
                   alt="Thomas Coen"
                   width={400}
                   height={500}
