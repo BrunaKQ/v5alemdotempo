@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { ArrowLeft, MapPin, Heart, Skull, ChevronRight } from "lucide-react"
+import { ArrowLeft, MapPin, Heart, Star, Skull, ChevronRight } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { SiteHeader } from "@/components/site-header"
@@ -8,6 +8,7 @@ import { SiteFooter } from "@/components/site-footer"
 
 export default function CharacterPage({ params }: { params: { id: string } }) {
   const character = characters.find((c) => c.id === params.id) || characters[0]
+
   return (
     <div className="flex min-h-screen flex-col bg-black text-white">
       <SiteHeader />
@@ -52,7 +53,6 @@ export default function CharacterPage({ params }: { params: { id: string } }) {
                   style={{ maxWidth: "100%", maxHeight: "800px" }}
                 />
               </div>
-
               <Card className="bg-midnight-700 text-gray-200">
                 <CardHeader>
                   <CardTitle className="font-serif text-lg text-silver-300">Informações</CardTitle>
@@ -63,6 +63,14 @@ export default function CharacterPage({ params }: { params: { id: string } }) {
                       <Heart className="h-4 w-4 text-crimson-500" />
                       <span className="text-sm">
                         <strong>Senhor:</strong> {character.sire}
+                      </span>
+                    </div>
+                  )}
+                  {character.birth && (
+                    <div className="flex items-center gap-2">
+                      <Star className="h-4 w-4 text-gray-500" />
+                      <span className="text-sm">
+                        <strong>Nascimento:</strong> {character.birth}
                       </span>
                     </div>
                   )}
@@ -84,7 +92,6 @@ export default function CharacterPage({ params }: { params: { id: string } }) {
                   )}
                 </CardContent>
               </Card>
-
               {character.disciplines && (
                 <Card className="bg-midnight-700 text-gray-200">
                   <CardHeader>
@@ -97,6 +104,26 @@ export default function CharacterPage({ params }: { params: { id: string } }) {
                           {discipline}
                         </Badge>
                       ))}
+                    </div>
+                  </CardContent>
+                </Card>
+              )}
+
+              {/* Vídeo (apenas para Nadine) */}
+              {character.id === "nadine" && (
+                <Card className="bg-midnight-700 text-gray-200 lg:col-span-3">
+                  <CardHeader>
+                    <CardTitle className="font-serif text-lg text-silver-300">Música Tema da Personagem</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="aspect-video w-3/4 mx-auto max-w-[500px]">
+                      <iframe
+                        src="https://www.youtube.com/embed/vW-HFy_XqZI" 
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        className="h-full w-full rounded-md"
+                      ></iframe>
                     </div>
                   </CardContent>
                 </Card>
@@ -120,7 +147,6 @@ export default function CharacterPage({ params }: { params: { id: string } }) {
                 </Card>
               )}
             </div>
-
             <div className="lg:col-span-2 space-y-8">
               <Card className="bg-midnight-700 text-gray-200">
                 <CardHeader>
@@ -136,7 +162,6 @@ export default function CharacterPage({ params }: { params: { id: string } }) {
                   </div>
                 </CardContent>
               </Card>
-
               {character.background && (
                 <Card className="bg-midnight-700 text-gray-200">
                   <CardHeader>
@@ -183,7 +208,6 @@ export default function CharacterPage({ params }: { params: { id: string } }) {
               </Card>
             </div>
           )}
-
           {character.id === "desmond" && (
             <div className="mt-8">
               <Card className="bg-midnight-700 text-gray-200">
@@ -220,6 +244,7 @@ const characters = [
     sect: "Camarilla",
     icon: "🔥",
     sire: "Victor Bloodwood",
+    birth: "02/11/1831",
     embrace: "02/11/1831",
     location: "Warehouse District",
     nature: "Rebelde",
@@ -242,6 +267,7 @@ const characters = [
     sect: "Camarilla",
     icon: "🎭",
     sire: "Jean-Baptiste Moreau",
+    birth: "02/11/1831",
     embrace: "30/08/1797",
     location: "French Quarter",
     nature: "Visionária",
@@ -268,6 +294,7 @@ const characters = [
     sect: "Camarilla",
     icon: "😎",
     sire: "Lafontaine",
+    birth: "02/11/1831",
     embrace: "28/01/1815",
     location: "Garden District Mansion",
     nature: "Arquiteto",
@@ -293,7 +320,8 @@ const characters = [
     sect: "Camarilla",
     icon: "🕷️",
     sire: "Kael Vane",
-    embrace: "23/01/1843",
+    birth: "02/11/1843",
+    embrace: "23/01/1868",
     location: "Laffayette Cemetery",
     nature: "Investigadora",
     demeanor: "Soturna",
@@ -309,10 +337,11 @@ const characters = [
     name: "Étienne Moreau",
     image: "/images/etienne.jpg",
     clan: "Tremere",
-    generation: 9,
+    generation: 10,
     sect: "Camarilla",
     icon: "🔮",
     sire: "Alana de Montreuil",
+    birth: "02/11/1831",
     embrace: "23/08/1793",
     location: "Garden District",
     nature: "Revoltado",
