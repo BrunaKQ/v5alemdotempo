@@ -1,7 +1,8 @@
+'use client' // <-- Adicionado aqui!
+
 import Link from "next/link"
 import { BookOpen } from "lucide-react"
 import { useState } from "react"
-
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 
