@@ -1,7 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
 import { ArrowLeft, MapPin, Heart, Skull, ChevronRight } from "lucide-react"
-
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { SiteHeader } from "@/components/site-header"
@@ -9,7 +8,6 @@ import { SiteFooter } from "@/components/site-footer"
 
 export default function CharacterPage({ params }: { params: { id: string } }) {
   const character = characters.find((c) => c.id === params.id) || characters[0]
-
   return (
     <div className="flex min-h-screen flex-col bg-black text-white">
       <SiteHeader />
@@ -19,20 +17,18 @@ export default function CharacterPage({ params }: { params: { id: string } }) {
             <ArrowLeft className="mr-2 h-4 w-4" />
             Voltar para A Coterie
           </Link>
-
           <div className="mb-8">
             <div className="flex items-center gap-4 mb-4">
               <h1 className="font-serif text-4xl font-bold text-silver-200">{character.name}</h1>
               {character.icon && <span className="text-4xl">{character.icon}</span>}
             </div>
-
             <div className="flex flex-wrap gap-2 mb-6">
               <Badge variant="outline" className="border-blood-600 text-blood-400">
                 {character.clan}
               </Badge>
               {character.generation && (
                 <Badge variant="outline" className="border-silver-500 text-silver-400">
-                  10ª Geração
+                  {character.generation}ª Geração
                 </Badge>
               )}
               {character.sect && (
@@ -42,22 +38,20 @@ export default function CharacterPage({ params }: { params: { id: string } }) {
               )}
             </div>
           </div>
-
           <div className="grid gap-8 lg:grid-cols-3">
             {/* Sidebar with character info */}
             <div className="space-y-6">
-              {character.id === "nadine" && (
-                <div className="overflow-hidden rounded-lg">
-                  <Image
-                    src="/images/nadine.jpg"
-                    alt="Nadine"
-                    width={320}
-                    height={427}
-                    className="rounded-lg object-cover mx-auto"
-                    style={{ maxWidth: "100%", maxHeight: "800px" }}
-                  />
-                </div>
-              )}
+              {/* Imagem do personagem - Agora para todos */}
+              <div className="overflow-hidden rounded-lg">
+                <Image
+                  src={character.image}
+                  alt={character.name}
+                  width={320}
+                  height={427}
+                  className="rounded-lg object-cover mx-auto"
+                  style={{ maxWidth: "100%", maxHeight: "800px" }}
+                />
+              </div>
 
               <Card className="bg-midnight-700 text-gray-200">
                 <CardHeader>
@@ -72,7 +66,6 @@ export default function CharacterPage({ params }: { params: { id: string } }) {
                       </span>
                     </div>
                   )}
-
                   {character.embrace && (
                     <div className="flex items-center gap-2">
                       <Skull className="h-4 w-4 text-gray-500" />
@@ -81,7 +74,6 @@ export default function CharacterPage({ params }: { params: { id: string } }) {
                       </span>
                     </div>
                   )}
-
                   {character.location && (
                     <div className="flex items-center gap-2">
                       <MapPin className="h-4 w-4 text-silver-400" />
@@ -158,6 +150,7 @@ export default function CharacterPage({ params }: { params: { id: string } }) {
             </div>
           </div>
 
+          {/* Links extras condicionais */}
           {character.id === "emilie" && (
             <div className="mt-8">
               <Card className="bg-midnight-700 text-gray-200">
@@ -216,10 +209,12 @@ export default function CharacterPage({ params }: { params: { id: string } }) {
   )
 }
 
+// Lista de personagens com propriedade `image`
 const characters = [
   {
     id: "nadine",
     name: "Nadine Anoura",
+    image: "/images/nadine.jpg", // Adicionado
     clan: "Brujah",
     generation: 10,
     sect: "Camarilla",
@@ -241,6 +236,7 @@ const characters = [
   {
     id: "emilie",
     name: "Emilie",
+    image: "/images/emilie-6.jpg", // Adicionado
     clan: "Malkaviana",
     generation: 10,
     sect: "Camarilla",
@@ -250,7 +246,7 @@ const characters = [
     location: "French Quarter",
     nature: "Visionária",
     demeanor: "Excêntrica",
-    disciplines: ["Auspícios", "Demência", "Ofuscação", "Fata Morgana"],
+    disciplines: ["Auspícios", "Dominação", "Ofuscação"],
     background:
       "Antes conhecida como Mary Shelley, a famosa autora de Frankenstein. Nascida em 1797 na Inglaterra, filha da feminista Mary Wollstonecraft, sofreu com instabilidade mental desde jovem. Foi internada em um asilo antes de ser resgatada por Percy Shelley. Após uma vida de tragédias e perdas, casou-se com Edmond Dupont por segurança financeira.",
     story: [
@@ -266,6 +262,7 @@ const characters = [
   {
     id: "desmond",
     name: "Desmond Dupret Legrand",
+    image: "/images/desmond-1.jpg", // Adicionado
     clan: "Lasombra",
     generation: 10,
     sect: "Camarilla",
@@ -290,6 +287,7 @@ const characters = [
   {
     id: "helena",
     name: "Helena Stryker",
+    image: "/images/helena-1.jpg", // Adicionado
     clan: "Nosferatu",
     generation: 10,
     sect: "Camarilla",
@@ -303,7 +301,30 @@ const characters = [
     background:
       "Margareth Ogden Armour nasceu em 1843 em Nova York, filha mais velha de Philip Danforth Armour, industrial da carne, e Malvina Belle Ogden, uma mulher de fé frágil e coração forte. Desde jovem, mostrou-se excepcionalmente inteligente, com interesse precoce por anatomia, medicina e patologia  — áreas dominadas por homens na época. Helena se destacou desde cedo por sua inteligência afiada e fascínio pela anatomia, tornando-se médica-legista antes de seu desaparecimento em 1868, onde foi considerada morta em um acidente. Na verdade, ela foi abraçada por Kael Vane, na época Diretor e mentor dela no Presbiteryan Hospital of Chicago, após ela descobrir segredos que não deveria ter visto — verdades ocultas em cadáveres e documentos proibidos.",
     story: [
-      "Nos primeiros anos como vampira, Helena foi moldada por Kael como uma espiã silenciosa, uma observadora das sombras, treinada para ler corpos, extrair verdades e agir sem chamar atenção. Com o tempo, tornou-se mais do que uma cria: uma ferramenta indispensável nos jogos noturnos de poder entre a Camarilla e os fragmentos do Sabbat que se infiltravam na cidade. Quando Khalid al-Rashid ascendeu como primogênito dos Nosferatu locais, Helena já operava nas margens do conflito, aprendendo a mover-se entre facções, entre mentiras, entre ordens não ditas. Em 1873, deixou Chicago em busca de respostas que Kael não lhe dera, levando consigo perguntas sobre sangue antigo, rituais proibidos e uma profecia oculta no Manuscrito de Tihuta. Passou décadas vagando entre cidades, servindo como médica num mundo que acreditava nela morta, enquanto alimentava-se de verdades que nenhum humano ousaria tocar. Seu refúgio finalmente se estabeleceu em Nova Orleans, sob o Cemitério de Lafayette, onde passou a estudar textos proibidos e a investigar crimes que iam além do natural. Ao longo dos anos, Helena tornou-se mais do que uma informante: era uma leitora do que jazia sob a carne, uma arqueóloga do impossível.",
-      ],
+      "Nos primeiros anos como vampira, Helena foi moldada por Kael como uma espiã silenciosa, uma observadora das sombras, treinada para ler corpos, extrair verdades e agir sem chamar atenção. Com o tempo, tornou-se mais do que uma cria: uma ferramenta indispensável nos jogos noturnos de poder entre a Camarilla e os fragmentos do Sabbat que se infiltravam na cidade. Quando Khalid al-Rashid ascendeu como primogênito dos Nosferatu locais, Helena já operava nas margens do conflito, aprendendo a mover-se entre facções, entre mentiras, entre ordens não ditas. Em 1896, deixou Chicago em busca de respostas que Kael não lhe dera, levando consigo perguntas sobre sangue antigo, rituais proibidos e uma profecia oculta no Manuscrito de Tihuta. Passou décadas vagando entre cidades, servindo como médica num mundo que acreditava nela morta, enquanto alimentava-se de verdades que nenhum humano ousaria tocar. Seu refúgio finalmente se estabeleceu em Nova Orleans, sob o Cemitério de Lafayette, onde passou a estudar textos proibidos e a investigar crimes que iam além do natural. Ao longo dos anos, Helena tornou-se mais do que uma informante: era uma leitora do que jazia sob a carne, uma arqueóloga do impossível.",
+    ],
+  },
+  {
+    id: "etienne",
+    name: "Étienne Moreau",
+    image: "/images/etienne.jpg",
+    clan: "Tremere",
+    generation: 9,
+    sect: "Camarilla",
+    icon: "🔮",
+    sire: "Alana de Montreuil",
+    embrace: "23/08/1793",
+    location: "Garden District",
+    nature: "Revoltado",
+    demeanor: "Intelectual",
+    disciplines: ["Feitiçaria de Sangue", "Auspícios", "Dominação"],
+    background:
+      "Filho de uma família burguesa francesa, Étienne nasceu em Lyon no início da Revolução Francesa. Professor universitário e ativista político, ele lutou por ideais de liberdade, igualdade e fraternidade até ser transformado por Alana de Montreuil, uma Tremere que via nele o potencial para unir o saber humano às artes ocultas.",
+    story: [
+      "Étienne sempre foi movido por princípios revolucionários. Durante a Revolução Francesa, ele escrevia panfletos e liderava assembleias populares, defendendo reformas radicais na sociedade. Foi nesse contexto tenso que cruzou o caminho de Alana, uma vampira Tremere que via na desordem humana a oportunidade de moldar novas mentes.",
+      "Ao ser Abraçado, Étienne não abandonou seus ideais. Pelo contrário, eles se ampliaram: agora, ele buscava justiça não apenas entre humanos, mas entre os próprios vampiros. Sua visão crítica fez dele um aliado improvável da coterie Ordo Noctis, especialmente após testemunhar os horrores do Sabá.",
+      "Hoje, ele usa sua posição como fundador da Ordo Noctis se aproxima de culturas religiosas marginalizadas, especialmente a africana, estudando práticas esotéricas e tentando entender melhor os Iwa e outras forças que habitam o limiar entre o mundo mortal e o sobrenatural.",
+      "Embora pareça calmo e refinado, Étienne carrega um peso interno: o de ver amigos vampiros repetirem os mesmos erros que a humanidade já cometeu. Ele acredita que o progresso só é possível com união, e por isso protege sua coterie como uma causa maior do que qualquer clã ou linhagem.",
+    ],
   },
 ]
