@@ -1,11 +1,10 @@
-"use client"
+'use client'
 
-import { useState } from "react"
-import Link from "next/link"
-import { Menu, X } from "lucide-react"
-
-import { Button } from "@/components/ui/button"
-import { useMobile } from "@/hooks/use-mobile"
+import { useState } from 'react'
+import Link from 'next/link'
+import { Menu, X } from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { useMobile } from '@/hooks/use-mobile'
 
 export function SiteHeader() {
   const isMobile = useMobile()
@@ -14,6 +13,7 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-midnight-700 bg-black bg-opacity-90 backdrop-blur-sm">
       <div className="mx-auto flex h-16 max-w-5xl items-center justify-between px-4 sm:px-6 lg:px-8">
+        {/* Logo */}
         <div className="flex items-center">
           <Link href="/" className="flex flex-col items-center">
             <span className="font-serif text-lg font-bold text-silver-200">Nova Orleans</span>
@@ -21,12 +21,20 @@ export function SiteHeader() {
           </Link>
         </div>
 
+        {/* Navegação Mobile */}
         {isMobile ? (
           <>
-            <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-gray-200">
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="text-gray-200"
+              aria-label={isMenuOpen ? 'Fechar menu' : 'Abrir menu'}
+            >
               {isMenuOpen ? <X /> : <Menu />}
             </Button>
 
+            {/* Menu dropdown mobile */}
             {isMenuOpen && (
               <div className="absolute left-0 top-16 z-50 w-full bg-midnight-900 bg-opacity-95 p-4 backdrop-blur-sm">
                 <nav className="flex flex-col space-y-4">
@@ -84,6 +92,7 @@ export function SiteHeader() {
             )}
           </>
         ) : (
+          /* Navegação Desktop */
           <nav className="flex items-center space-x-6">
             <Link href="/" className="text-gray-200 hover:text-silver-300">
               Início
