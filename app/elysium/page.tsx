@@ -57,9 +57,8 @@ export default function ElysiumPage() {
               <BookOpen className="h-4 w-4 text-crimson-500" />
               <span>🎭 NPC Josephine "Josie" Dubois</span>
             </Link>
-            {/* NOVO LINK ADICIONADO AQUI */}
             <Link
-              href="/elysium/Sebastian-West"
+              href="/elysium/josephine-dubois"
               className="flex items-center gap-3 rounded p-3 text-gray-300 hover:bg-midnight-800 hover:text-silver-200"
             >
               <BookOpen className="h-4 w-4 text-indigo-500" />
