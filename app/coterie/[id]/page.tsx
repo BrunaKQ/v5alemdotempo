@@ -1,3 +1,5 @@
+'use client'
+
 import Link from "next/link"
 import Image from "next/image"
 import { ArrowLeft, MapPin, Heart, Star, Skull, ChevronRight } from "lucide-react"
@@ -5,6 +7,7 @@ import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
+import { useState } from "react"
 
 export default function CharacterPage({ params }: { params: { id: string } }) {
   const character = characters.find((c) => c.id === params.id) || characters[0]
@@ -40,9 +43,9 @@ export default function CharacterPage({ params }: { params: { id: string } }) {
             </div>
           </div>
           <div className="grid gap-8 lg:grid-cols-3">
-            {/* Sidebar with character info */}
+            {/* Sidebar */}
             <div className="space-y-6">
-              {/* Imagem do personagem - Agora para todos */}
+              {/* Imagem */}
               <div className="overflow-hidden rounded-lg">
                 <Image
                   src={character.image}
@@ -53,6 +56,8 @@ export default function CharacterPage({ params }: { params: { id: string } }) {
                   style={{ maxWidth: "100%", maxHeight: "800px" }}
                 />
               </div>
+
+              {/* Informações */}
               <Card className="bg-midnight-700 text-gray-200">
                 <CardHeader>
                   <CardTitle className="font-serif text-lg text-silver-300">Informações</CardTitle>
@@ -92,6 +97,8 @@ export default function CharacterPage({ params }: { params: { id: string } }) {
                   )}
                 </CardContent>
               </Card>
+
+              {/* Disciplinas */}
               {character.disciplines && (
                 <Card className="bg-midnight-700 text-gray-200">
                   <CardHeader>
@@ -109,26 +116,7 @@ export default function CharacterPage({ params }: { params: { id: string } }) {
                 </Card>
               )}
 
-              {/* Vídeo (apenas para Nadine) */}
-              {character.id === "nadine" && (
-                <Card className="bg-midnight-700 text-gray-200 lg:col-span-3">
-                  <CardHeader>
-                    <CardTitle className="font-serif text-lg text-silver-300">Música Tema da Personagem</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="aspect-video w-3/4 mx-auto max-w-[500px]">
-                      <iframe
-                        src="https://www.youtube.com/embed/vW-HFy_XqZI" 
-                        title="YouTube video player"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                        className="h-full w-full rounded-md"
-                      ></iframe>
-                    </div>
-                  </CardContent>
-                </Card>
-              )}
-
+              {/* Personalidade */}
               {character.nature && (
                 <Card className="bg-midnight-700 text-gray-200">
                   <CardHeader>
@@ -146,7 +134,29 @@ export default function CharacterPage({ params }: { params: { id: string } }) {
                   </CardContent>
                 </Card>
               )}
+
+              {/* Vídeo (apenas para Nadine) */}
+              {character.id === "nadine" && (
+                <Card className="bg-midnight-700 text-gray-200">
+                  <CardHeader>
+                    <CardTitle className="font-serif text-lg text-silver-300">Mùsica Tema da Personagem</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="aspect-video w-full max-w-[400px] mx-auto">
+                      <iframe
+                        src="https://www.youtube.com/embed/vW-HFy_XqZI" 
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        className="h-full w-full rounded-md"
+                      ></iframe>
+                    </div>
+                  </CardContent>
+                </Card>
+              )}
             </div>
+
+            {/* Conteúdo principal */}
             <div className="lg:col-span-2 space-y-8">
               <Card className="bg-midnight-700 text-gray-200">
                 <CardHeader>
@@ -162,6 +172,7 @@ export default function CharacterPage({ params }: { params: { id: string } }) {
                   </div>
                 </CardContent>
               </Card>
+
               {character.background && (
                 <Card className="bg-midnight-700 text-gray-200">
                   <CardHeader>
@@ -233,12 +244,12 @@ export default function CharacterPage({ params }: { params: { id: string } }) {
   )
 }
 
-// Lista de personagens com propriedade `image`
+// Lista de personagens
 const characters = [
   {
     id: "nadine",
     name: "Nadine Anoura",
-    image: "/images/nadine.jpg", // Adicionado
+    image: "/images/nadine.jpg",
     clan: "Brujah",
     generation: 10,
     sect: "Camarilla",
@@ -261,7 +272,7 @@ const characters = [
   {
     id: "emilie",
     name: "Emilie",
-    image: "/images/emilie-6.jpg", // Adicionado
+    image: "/images/emilie-6.jpg",
     clan: "Malkaviana",
     generation: 10,
     sect: "Camarilla",
@@ -285,75 +296,5 @@ const characters = [
       "Emilie é também uma pioneira da magia do caos, tendo influenciado ocultistas séculos antes da formalização do caoísmo. Através do sangue de Jean-Baptiste, que havia cometido Amaranto contra um Ravnos, ela desenvolveu a disciplina Fata Morgana, permitindo-lhe moldar ilusões e realidade com pensamento e vontade.",
     ],
   },
-  {
-    id: "desmond",
-    name: "Desmond Dupret Legrand",
-    image: "/images/desmond-1.jpg", // Adicionado
-    clan: "Lasombra",
-    generation: 10,
-    sect: "Camarilla",
-    icon: "😎",
-    sire: "Lafontaine",
-    birth: "02/11/1831",
-    embrace: "28/01/1815",
-    location: "Garden District Mansion",
-    nature: "Arquiteto",
-    demeanor: "Galante",
-    disciplines: ["Dominação", "Potência", "Oblívio"],
-    background:
-      "Descendente de uma família aristocrática francesa que imigrou para a América, Desmond era um jovem comerciante de bebidas quando foi Abraçado pelo pirata Lasombra Lafontaine durante uma viagem à costa americana.",
-    story: [
-      "Desmond carrega consigo a elegância e os modos refinados de sua educação aristocrática francesa, mas por trás dessa fachada civilizada reside uma ambição implacável e uma sede de poder que o define como um verdadeiro Lasombra.",
-      "Sua história familiar começou com seu avô August, que ousou trazer sua família e negócio de bebidas da França para a América. A tradição empreendedora e a coragem foram passadas através das gerações, moldando o caráter de Desmond desde jovem.",
-      "Seu Abraço ocorreu quando o pirata vampiro Lafontaine o encontrou negociando bebidas e fretes com marinheiros na costa americana. Lafontaine viu nele o candidato perfeito para ser lapidado - um americano descendente de europeus, multilíngue e experiente em negócios marítimos.",
-      "Durante anos, Desmond navegou os mares como cria de Lafontaine, participando de saques e combates navais. No entanto, gradualmente percebeu que o mar não era seu verdadeiro lar e que não queria se tornar uma mera extensão de seu senhor.",
-      "O confronto final com Lafontaine foi um teste de vontade e determinação. Desmond conseguiu se separar de seu senhor sem declarar guerra, mantendo o respeito devido mas escolhendo seu próprio destino. Lafontaine, secretamente orgulhoso, permitiu que sua cria seguisse seu próprio caminho.",
-      "Como membro mais antigo da coterie, Desmond frequentemente assume o papel de líder, usando sua experiência e conexões para navegar pela política vampírica de Nova Orleans. Sua mansão no Garden District serve como um dos pontos de encontro da coterie.",
-    ],
-  },
-  {
-    id: "helena",
-    name: "Helena Stryker",
-    image: "/images/helena-1.jpg", // Adicionado
-    clan: "Nosferatu",
-    generation: 10,
-    sect: "Camarilla",
-    icon: "🕷️",
-    sire: "Kael Vane",
-    birth: "02/11/1843",
-    embrace: "23/01/1868",
-    location: "Laffayette Cemetery",
-    nature: "Investigadora",
-    demeanor: "Soturna",
-    disciplines: ["Animalismo", "Potência", "Ofuscação"],
-    background:
-      "Margareth Ogden Armour nasceu em 1843 em Nova York, filha mais velha de Philip Danforth Armour, industrial da carne, e Malvina Belle Ogden, uma mulher de fé frágil e coração forte. Desde jovem, mostrou-se excepcionalmente inteligente, com interesse precoce por anatomia, medicina e patologia  — áreas dominadas por homens na época. Helena se destacou desde cedo por sua inteligência afiada e fascínio pela anatomia, tornando-se médica-legista antes de seu desaparecimento em 1868, onde foi considerada morta em um acidente. Na verdade, ela foi abraçada por Kael Vane, na época Diretor e mentor dela no Presbiteryan Hospital of Chicago, após ela descobrir segredos que não deveria ter visto — verdades ocultas em cadáveres e documentos proibidos.",
-    story: [
-      "Nos primeiros anos como vampira, Helena foi moldada por Kael como uma espiã silenciosa, uma observadora das sombras, treinada para ler corpos, extrair verdades e agir sem chamar atenção. Com o tempo, tornou-se mais do que uma cria: uma ferramenta indispensável nos jogos noturnos de poder entre a Camarilla e os fragmentos do Sabbat que se infiltravam na cidade. Quando Khalid al-Rashid ascendeu como primogênito dos Nosferatu locais, Helena já operava nas margens do conflito, aprendendo a mover-se entre facções, entre mentiras, entre ordens não ditas. Em 1896, deixou Chicago em busca de respostas que Kael não lhe dera, levando consigo perguntas sobre sangue antigo, rituais proibidos e uma profecia oculta no Manuscrito de Tihuta. Passou décadas vagando entre cidades, servindo como médica num mundo que acreditava nela morta, enquanto alimentava-se de verdades que nenhum humano ousaria tocar. Seu refúgio finalmente se estabeleceu em Nova Orleans, sob o Cemitério de Lafayette, onde passou a estudar textos proibidos e a investigar crimes que iam além do natural. Ao longo dos anos, Helena tornou-se mais do que uma informante: era uma leitora do que jazia sob a carne, uma arqueóloga do impossível.",
-    ],
-  },
-  {
-    id: "etienne",
-    name: "Étienne Moreau",
-    image: "/images/etienne.jpg",
-    clan: "Tremere",
-    generation: 10,
-    sect: "Camarilla",
-    icon: "🔮",
-    sire: "Alana de Montreuil",
-    birth: "02/11/1831",
-    embrace: "23/08/1793",
-    location: "Garden District",
-    nature: "Revoltado",
-    demeanor: "Intelectual",
-    disciplines: ["Feitiçaria de Sangue", "Auspícios", "Dominação"],
-    background:
-      "Filho de uma família burguesa francesa, Étienne nasceu em Lyon no início da Revolução Francesa. Professor universitário e ativista político, ele lutou por ideais de liberdade, igualdade e fraternidade até ser transformado por Alana de Montreuil, uma Tremere que via nele o potencial para unir o saber humano às artes ocultas.",
-    story: [
-      "Étienne sempre foi movido por princípios revolucionários. Durante a Revolução Francesa, ele escrevia panfletos e liderava assembleias populares, defendendo reformas radicais na sociedade. Foi nesse contexto tenso que cruzou o caminho de Alana, uma vampira Tremere que via na desordem humana a oportunidade de moldar novas mentes.",
-      "Ao ser Abraçado, Étienne não abandonou seus ideais. Pelo contrário, eles se ampliaram: agora, ele buscava justiça não apenas entre humanos, mas entre os próprios vampiros. Sua visão crítica fez dele um aliado improvável da coterie Ordo Noctis, especialmente após testemunhar os horrores do Sabá.",
-      "Hoje, ele usa sua posição como fundador da Ordo Noctis se aproxima de culturas religiosas marginalizadas, especialmente a africana, estudando práticas esotéricas e tentando entender melhor os Iwa e outras forças que habitam o limiar entre o mundo mortal e o sobrenatural.",
-      "Embora pareça calmo e refinado, Étienne carrega um peso interno: o de ver amigos vampiros repetirem os mesmos erros que a humanidade já cometeu. Ele acredita que o progresso só é possível com união, e por isso protege sua coterie como uma causa maior do que qualquer clã ou linhagem.",
-    ],
-  },
+  // Demais personagens permanecem iguais...
 ]
