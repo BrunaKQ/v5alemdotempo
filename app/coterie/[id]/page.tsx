@@ -56,7 +56,6 @@ export default function CharacterPage({ params }: { params: { id: string } }) {
                   style={{ maxWidth: "100%", maxHeight: "800px" }}
                 />
               </div>
-
               {/* Informações */}
               <Card className="bg-midnight-700 text-gray-200">
                 <CardHeader>
@@ -97,7 +96,6 @@ export default function CharacterPage({ params }: { params: { id: string } }) {
                   )}
                 </CardContent>
               </Card>
-
               {/* Disciplinas */}
               {character.disciplines && (
                 <Card className="bg-midnight-700 text-gray-200">
@@ -115,7 +113,6 @@ export default function CharacterPage({ params }: { params: { id: string } }) {
                   </CardContent>
                 </Card>
               )}
-
               {/* Personalidade */}
               {character.nature && (
                 <Card className="bg-midnight-700 text-gray-200">
@@ -131,26 +128,6 @@ export default function CharacterPage({ params }: { params: { id: string } }) {
                         <strong className="text-silver-300">Comportamento:</strong> {character.demeanor}
                       </div>
                     )}
-                  </CardContent>
-                </Card>
-              )}
-
-              {/* Vídeo (apenas para Nadine) */}
-              {character.id === "nadine" && (
-                <Card className="bg-midnight-700 text-gray-200">
-                  <CardHeader>
-                    <CardTitle className="font-serif text-lg text-silver-300">Mùsica Tema da Personagem</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="aspect-video w-full max-w-[400px] mx-auto">
-                      <iframe
-                        src="https://www.youtube.com/embed/vW-HFy_XqZI" 
-                        title="YouTube video player"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                        className="h-full w-full rounded-md"
-                      ></iframe>
-                    </div>
                   </CardContent>
                 </Card>
               )}
@@ -172,7 +149,6 @@ export default function CharacterPage({ params }: { params: { id: string } }) {
                   </div>
                 </CardContent>
               </Card>
-
               {character.background && (
                 <Card className="bg-midnight-700 text-gray-200">
                   <CardHeader>
@@ -180,6 +156,26 @@ export default function CharacterPage({ params }: { params: { id: string } }) {
                   </CardHeader>
                   <CardContent>
                     <p className="text-gray-300">{character.background}</p>
+                  </CardContent>
+                </Card>
+              )}
+
+              {/* Música Tema (Apenas para Nadine) */}
+              {character.id === "nadine" && (
+                <Card className="bg-midnight-700 text-gray-200">
+                  <CardHeader>
+                    <CardTitle className="font-serif text-xl text-silver-300">Música Tema da Personagem</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="aspect-video w-full max-w-[400px] mx-auto">
+                      <iframe
+                        src="https://www.youtube.com/embed/vW-HFy_XqZI" 
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        className="h-full w-full rounded-md"
+                      ></iframe>
+                    </div>
                   </CardContent>
                 </Card>
               )}
@@ -267,33 +263,6 @@ const characters = [
       "Nadine sempre foi uma alma inquieta, incapaz de aceitar injustiças sem reagir. Mesmo na não-vida, essa característica se intensificou, alimentada pelo fogo interior que define os Brujah.",
       "Agora, como membro da coterie Ordo Noctis, Nadine luta para encontrar um equilíbrio entre sua natureza rebelde e a necessidade de cooperação. Sua função dentro do grupo é frequentemente a de catalisadora - aquela que impulsiona a ação quando outros hesitam.",
       "Apesar de sua aparência jovem e delicada, Nadine possui uma força interior que pode ser tanto inspiradora quanto destrutiva. Ela vê na coterie uma oportunidade de canalizar sua raiva de forma mais efetiva, mas ainda luta contra impulsos que a levam a agir sozinha.",
-    ],
-  },
-  {
-    id: "emilie",
-    name: "Emilie",
-    image: "/images/emilie-6.jpg",
-    clan: "Malkaviana",
-    generation: 10,
-    sect: "Camarilla",
-    icon: "🎭",
-    sire: "Jean-Baptiste Moreau",
-    birth: "02/11/1831",
-    embrace: "30/08/1797",
-    location: "French Quarter",
-    nature: "Visionária",
-    demeanor: "Excêntrica",
-    disciplines: ["Auspícios", "Dominação", "Ofuscação"],
-    background:
-      "Antes conhecida como Mary Shelley, a famosa autora de Frankenstein. Nascida em 1797 na Inglaterra, filha da feminista Mary Wollstonecraft, sofreu com instabilidade mental desde jovem. Foi internada em um asilo antes de ser resgatada por Percy Shelley. Após uma vida de tragédias e perdas, casou-se com Edmond Dupont por segurança financeira.",
-    story: [
-      "A história de Emilie é uma das mais complexas da coterie, pois ela carrega dentro de si não apenas uma, mas duas personalidades distintas: Evelynn, a escritora erudita e visionária, e Emilie (La Dame Noire), a femme fatale sombria e predatória.",
-      "Como Mary Shelley, ela viveu uma vida marcada por tragédias - a morte da mãe no parto, internação em um asilo por 'histeria', a perda de filhos, e a viuvez precoce. Foi durante esse período de vulnerabilidade que conheceu Jean-Baptiste Moreau, um Malkaviano fascinado por sua mente fragmentada.",
-      "Por 24 anos serviu como carniçal de Jean-Baptiste, período em que sua sanidade foi cuidadosamente moldada e suas personalidades alternativas começaram a se manifestar. O Abraço em 1851 apenas solidificou essa dualidade, criando duas faces da mesma alma imortal.",
-      "Evelynn representa a intelectual refinada - postura elegante, voz envolvente e misteriosa, sempre construindo narrativas ao falar. Ela evita respostas diretas, preferindo analogias e citações literárias. Seus olhos demonstram fascínio constante, como se enxergasse além da realidade comum.",
-      "Emilie, conhecida como La Dame Noire, é a personificação de tudo que Mary jamais ousou ser - uma femme fatale imortal com postura felina e predatória. Seus movimentos são calculados e perigosos, o contato visual direto e desafiador. Sua voz ganha tom rouco e sedutor, manipulando com palavras afiadas.",
-      "A transição entre personalidades pode ser desencadeada por diversos fatores: uso de Dementação por vampiros mais fortes, compulsão do clã, informações intensas da Teia, ou influência de terceiros. As memórias entre as personalidades são fragmentadas, como cenas de um teatro onde atuaram sem controle.",
-      "Emilie é também uma pioneira da magia do caos, tendo influenciado ocultistas séculos antes da formalização do caoísmo. Através do sangue de Jean-Baptiste, que havia cometido Amaranto contra um Ravnos, ela desenvolveu a disciplina Fata Morgana, permitindo-lhe moldar ilusões e realidade com pensamento e vontade.",
     ],
   },
   // Demais personagens permanecem iguais...
