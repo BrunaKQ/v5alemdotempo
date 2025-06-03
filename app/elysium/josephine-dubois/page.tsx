@@ -16,11 +16,11 @@ export default function JosephineDuboisPage() {
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-10" />
           <div
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: "url('/images/capa-josie-dubois.jpg')" }}
+            style={{ backgroundImage: "url('/images/whorehouse.jpeg')" }}
           />
           <div className="absolute bottom-0 left-0 p-8">
             <h1 className="font-serif text-5xl font-bold text-silver-200">Josephine "Josie" Dubois</h1>
-            <p className="mt-2 text-xl text-crimson-500">A Rainha dos Anarquistas</p>
+            <p className="mt-2 text-xl text-purple-500">A Rainha dos Anarquistas</p>
           </div>
         </div>
 
@@ -87,7 +87,7 @@ export default function JosephineDuboisPage() {
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-center gap-2">
                       <span className="h-2 w-2 rounded-full bg-blood-500"></span>
-                      <span>Victor Bloodwood (Anarquista, Gangrel)</span>
+                      <span>Victor Bloodwood (Brujah Reinante)</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <span className="h-2 w-2 rounded-full bg-blood-500"></span>
