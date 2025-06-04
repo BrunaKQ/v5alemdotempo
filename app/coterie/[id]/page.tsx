@@ -268,7 +268,7 @@ const characters = [
   {
     id: "emilie",
     name: "Emilie",
-    image: "/images/emilie-6.jpg",
+    image: "/images/emilie-gostosa.jpg",
     clan: "Malkaviana",
     generation: 10,
     sect: "Camarilla",
