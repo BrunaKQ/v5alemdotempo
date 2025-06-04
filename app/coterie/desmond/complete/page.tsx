@@ -435,30 +435,19 @@ export default function DesmondCompletePage() {
 
                   <p className="text-gray-300">
                     <strong>
-                      Desmond foi a única cria de Lafontaine, que depositou muitas expectativas nele e se frustrou
-                      bastante quando viu sua cria escolher um caminho totalmente diferente dele. No entanto, essa
-                      frustração também carrega uma admiração que nunca vai ser admitida. Enquanto Lafontaine se tornou
-                      tudo aquilo para que ele foi criado, sua cria ousou desafiá-lo na escolha de seu próprio destino,
-                      sem "declarar guerra" ou inimizade, sua cria sempre lhe dirigiu o respeito de Senhor e deixou bem
-                      claro que suas escolhas não partiam de qualquer influência que pudesse ferir sua autenticidade. No
-                      entanto, Lafontaine se sente no dever de provocar Desmond; de buscar uma falha em sua argumentação
-                      ou tirá-lo de sua zona de conforto para que ele demonstre alguma fraqueza e cometa um erro
-                      crucial. Talvez o próprio Lafontaine tenha errado em pensar que havia algum brio de pirata em sua
-                      cria mas, com certeza acertou em fazer dele um Lasombra e isso lhe orgulha de certa forma.
+                      Desmond foi a única cria de Lafontaine, que depositou muitas expectativas nele e se frustrou bastante quando viu sua cria escolher um caminho totalmente diferente do que ele havia planejado. No entanto, essa frustração também carrega uma certa admiração que nunca vai ser admitida: enquanto Lafontaine se tornou tudo aquilo para que ele foi criado, sua cria ousou desafiá-lo na escolha de seu próprio destino. Sem "declarar guerra" ou inimizade, Desmond sempre dirigiu o respeito devido ao Senhor e deixou bem claro que suas escolhas não partiam de qualquer influência que pudesse ferir sua autenticidade, no entanto, Lafontaine se sente no dever de provocar Desmond; de buscar uma falha em sua argumentação ou tirá-lo de sua zona de conforto para que ele demonstre alguma fraqueza e cometa um erro em seus argumentos.
                     </strong>
                   </p>
 
                   <p className="text-gray-300">
                     <strong>
-                      Por muito tempo Desmond viveu no mundo de seu Senhor. Tempo o bastante para perceber que
-                      Lafontaine estava irremediavelmente destinado a continuar a ser o que sempre foi. No entanto, o
-                      pirata não conhecia regras nem autoridade, achava-se dono do mar e invencível nele. Os portos não
-                      passavam de postos de luxuria e troca de mercadorias, além de uma fonte exótica, constante e
-                      abundante de sangue. Lafontaine vivia pra si, e mesmo o abraço de Desmond somente se explicara
-                      como sendo pra satisfazer um desejo ou curiosidade dele. Quando Desmond conseguiu enxergar essa
-                      verdade, ele também viu que não queria se tornar aquilo. Seu lugar não era no mar e o mar não o
-                      queria. Distanciar-se de seu Senhor é necessário, pois a mera referência de seu nome poderia gerar
-                      problemas e Desmond sempre tem evitado falar de sua linhagem.
+                      Talvez o próprio Lafontaine tenha errado em pensar que havia algum brio de pirata em sua cria mas, com certeza, acertou em fazer dele um Lasombra e isso lhe orgulha de certa forma. argumentos.
+                    </strong>
+                  </p>
+
+                  <p className="text-gray-300">
+                    <strong>
+                      Desmond viveu por muito tempo no mundo de seu Senhor, até o momento em que percebeu que Lafontaine estava irremediavelmente destinado a continuar a ser o que sempre foi. No entanto, o pirata não conhecia regras nem autoridade, achava-se dono do mar e invencível nele. Os portos não passavam de postos de luxuria e troca de mercadorias, além de uma fonte exótica, constante e abundante de sangue. Lafontaine vivia pra si, e mesmo o abraço de Desmond somente se explicara como sendo pra satisfazer um desejo ou curiosidade dele. Quando Desmond conseguiu enxergar essa verdade, ele também viu que não queria se tornar aquilo. Seu lugar não era no mar e o mar não o queria. Distanciar-se de seu Senhor foi necessário, pois a mera referência de seu nome poderia gerar problemas e Desmond sempre tem evitado falar de sua linhagem.
                     </strong>
                   </p>
                 </div>
