@@ -15,7 +15,7 @@ export default function Helena30101929Page() {
           </Link>
 
           <h1 className="font-serif text-4xl font-bold text-silver-200">Helena</h1>
-          <p className="italic text-dodgerblue-500 mt-2">Um conto de Nadine Anoura</p>
+          <p className="italic text-dodgerblue-500 mt-2">Um conto de Helena Stryker</p>
 
           <article className="prose prose-invert prose-p:text-gray-300 prose-strong:text-crimson-400 prose-em:text-amber-400 mt-8 space-y-6">
             <p>
