@@ -314,7 +314,7 @@ const characters = [
   {
     id: "helena",
     name: "Helena Stryker",
-    image: "/images/helena-1.jpg",
+    image: "/images/ezgif-187bbe49a97517.gif",
     clan: "Nosferatu",
     generation: 10,
     sect: "Camarilla",
