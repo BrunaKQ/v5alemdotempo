@@ -98,6 +98,7 @@ const sessions = [
     summary: [
       "A coterie descobre que o lobisomem Michael Bayle realmente amava Grace. Os lobisomens vão embora da cidade. Victor conta a Nadine seus planos e a proibe de contar a qualquer um.",
       "A polícia quase descobriu os planos da coterie mas Desmond e Nadine os enganam. Helena fechou negócios com capangas de Capone e ganhou influência com isso. Fim dessa história.",
+      "Dia em que ocorreram os eventos da sessão: 31/10/1929.",
     ],
     notes: "8 pontos de Experiência para Desmond, Emilie, Étienne, Helena e Nadine.",
   },
