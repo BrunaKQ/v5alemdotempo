@@ -353,6 +353,6 @@ const characters = [
     story: [
       "Étienne sempre foi movido por princípios revolucionários. Durante a Revolução Francesa, ele escrevia panfletos e liderava assembleias populares, defendendo reformas radicais na sociedade. Foi nesse contexto tenso que cruzou o caminho de Alana, uma vampira Tremere que via na desordem humana a oportunidade de moldar novas mentes.",
     ],
-    youtubeVideoUrl: "jkl012opq", // Substitua por ID real
+    youtubeVideoUrl: "NvsWUrcMBeg", // Substitua por ID real
   },
 ]
