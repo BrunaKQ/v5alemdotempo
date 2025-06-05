@@ -93,7 +93,7 @@ export default function SessoesPage() {
 
 const sessions = [
   {
-    id: "session-20-05-2025",
+    id: "session-03-06-2025",
     date: "03/06/2025",
     summary: [
       "A coterie descobre que o lobisomem Michael Bayle realmente amava Grace. Os lobisomens vão embora da cidade. Victor conta a Nadine seus planos e a proibe de contar a qualquer um.",
