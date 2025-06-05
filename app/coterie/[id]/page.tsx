@@ -165,7 +165,7 @@ export default function CharacterPage({ params }: { params: { id: string } }) {
                     <CardTitle className="font-serif text-xl text-silver-300">Música Tema da Personagem</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <div className="aspect-video w-full max-w-[400px] mx-auto">
+                    <div className="aspect-video w-full max-w-[500px] mx-auto">
                       <iframe
                         src={`https://www.youtube.com/embed/${character.youtubeVideoUrl}`} 
                         title="YouTube video player"
