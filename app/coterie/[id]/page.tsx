@@ -1,5 +1,4 @@
 'use client'
-
 import Link from "next/link"
 import Image from "next/image"
 import { ArrowLeft, MapPin, Heart, Star, Skull, ChevronRight } from "lucide-react"
@@ -132,7 +131,6 @@ export default function CharacterPage({ params }: { params: { id: string } }) {
                 </Card>
               )}
             </div>
-
             {/* Conteúdo principal */}
             <div className="lg:col-span-2 space-y-8">
               <Card className="bg-midnight-700 text-gray-200">
@@ -160,8 +158,8 @@ export default function CharacterPage({ params }: { params: { id: string } }) {
                 </Card>
               )}
 
-              {/* Música Tema (Apenas para Nadine) */}
-              {character.id === "nadine" && (
+              {/* Música Tema - Para Todos os Personagens que tiverem youtubeVideoUrl */}
+              {character.youtubeVideoUrl && (
                 <Card className="bg-midnight-700 text-gray-200">
                   <CardHeader>
                     <CardTitle className="font-serif text-xl text-silver-300">Música Tema da Personagem</CardTitle>
@@ -169,7 +167,7 @@ export default function CharacterPage({ params }: { params: { id: string } }) {
                   <CardContent>
                     <div className="aspect-video w-full max-w-[400px] mx-auto">
                       <iframe
-                        src="https://www.youtube.com/embed/vW-HFy_XqZI" 
+                        src={`https://www.youtube.com/embed/${character.youtubeVideoUrl}`} 
                         title="YouTube video player"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
@@ -240,7 +238,7 @@ export default function CharacterPage({ params }: { params: { id: string } }) {
   )
 }
 
-// Lista de personagens
+// Lista de personagens com link de vídeo do YouTube
 const characters = [
   {
     id: "nadine",
@@ -264,6 +262,7 @@ const characters = [
       "Agora, como membro da coterie Ordo Noctis, Nadine luta para encontrar um equilíbrio entre sua natureza rebelde e a necessidade de cooperação. Sua função dentro do grupo é frequentemente a de catalisadora - aquela que impulsiona a ação quando outros hesitam.",
       "Apesar de sua aparência jovem e delicada, Nadine possui uma força interior que pode ser tanto inspiradora quanto destrutiva. Ela vê na coterie uma oportunidade de canalizar sua raiva de forma mais efetiva, mas ainda luta contra impulsos que a levam a agir sozinha.",
     ],
+    youtubeVideoUrl: "vW-HFy_XqZI", // 
   },
   {
     id: "emilie",
@@ -287,6 +286,7 @@ const characters = [
       "Como Mary Shelley, ela viveu uma vida marcada por tragédias - a morte da mãe no parto, internação em um asilo por 'histeria', a perda de filhos, e a viuvez precoce. Foi durante esse período de vulnerabilidade que conheceu Jean-Baptiste Moreau, um Malkaviano fascinado por sua mente fragmentada.",
       "Por 24 anos serviu como carniceira de Jean-Baptiste, período em que sua sanidade foi cuidadosamente moldada e suas personalidades alternativas começaram a se manifestar. O Abraço em 1851 apenas solidificou essa dualidade, criando duas faces da mesma alma imortal.",
     ],
+    youtubeVideoUrl: "iGHtt_BdszI", // Substitua por ID real
   },
   {
     id: "desmond",
@@ -309,6 +309,7 @@ const characters = [
       "Desmond carrega consigo a elegância e os modos refinados de sua educação aristocrática francesa, mas por trás dessa fachada civilizada reside uma ambição implacável e uma sede de poder que o define como um verdadeiro Lasombra.",
       "Sua história familiar começou com seu avô August, que ousou trazer sua família e negócio de bebidas da França para a América. A tradição empreendedora e a coragem foram passadas através das gerações, moldando o caráter de Desmond desde jovem.",
     ],
+    youtubeVideoUrl: "iGHtt_BdszI", // Substitua por ID real
   },
   {
     id: "helena",
@@ -330,6 +331,7 @@ const characters = [
     story: [
       "Nos primeiros anos como vampira, Helena foi moldada por Kael como uma espiã silenciosa, uma observadora das sombras, treinada para ler corpos, extrair verdades e agir sem chamar atenção. Com o tempo, tornou-se mais do que uma cria: uma ferramenta indispensável nos jogos noturnos de poder entre a Camarilla e os fragmentos do Sabbat que se infiltravam na cidade.",
     ],
+    youtubeVideoUrl: "ghi789rst", // Substitua por ID real
   },
   {
     id: "etienne",
@@ -351,5 +353,6 @@ const characters = [
     story: [
       "Étienne sempre foi movido por princípios revolucionários. Durante a Revolução Francesa, ele escrevia panfletos e liderava assembleias populares, defendendo reformas radicais na sociedade. Foi nesse contexto tenso que cruzou o caminho de Alana, uma vampira Tremere que via na desordem humana a oportunidade de moldar novas mentes.",
     ],
+    youtubeVideoUrl: "jkl012opq", // Substitua por ID real
   },
 ]

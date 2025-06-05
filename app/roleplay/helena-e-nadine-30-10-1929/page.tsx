@@ -17,6 +17,7 @@ export default function HelenaENadinePage() {
           <p className="italic text-dodgerblue-500 mt-2">Um diálogo entre Helena e Nadine</p>
 
           <article className="prose prose-invert prose-p:text-gray-300 prose-strong:text-crimson-400 prose-em:text-amber-400 mt-8 space-y-6">
+            {/* NARRATIVA INICIAL */}
             <p className="text-justify indent-8 leading-relaxed">
               O som dos saltos de Nadine ecoava com precisão quase ritualística. Cada passo era marcado, firme, como se ela cravasse seu direito de existir naquele espaço esquecido por Deus — ou pelos deuses que ainda restavam.
             </p>
@@ -44,6 +45,8 @@ export default function HelenaENadinePage() {
             <p className="text-justify indent-8 leading-relaxed">
               Helena viria até ela.
             </p>
+
+            {/* HELLENA CHEGA */}
             <p className="text-justify indent-8 leading-relaxed">
               Nadine não ouviu Helena chegar. Não houve som de pedra arrastada, nem de passos, nem ranger de ossos velhos. Helena simplesmente estava ali, surgindo do nada como uma lembrança ruim que volta sem aviso.
             </p>
@@ -59,6 +62,8 @@ export default function HelenaENadinePage() {
             <p className="text-justify indent-8 leading-relaxed text-rose-500">
               Mas não vim aqui pra provar que sei andar em linha reta.
             </p>
+
+            {/* CONTINUAÇÃO DA NARRATIVA */}
             <p className="text-justify indent-8 leading-relaxed">
               Deu um passo adiante. O som discreto de seus saltos ecoou suavemente na antiga pedra do refúgio. Sua presença não era impositiva, mas firme. Segura de si.
             </p>
@@ -83,6 +88,8 @@ export default function HelenaENadinePage() {
             <p className="text-justify indent-8 leading-relaxed text-rose-500">
               Eu confio em você, Helena. Mesmo quando talvez não devesse. E acho que foi por isso que vim aqui primeiro. Você como xerife... eu, talvez, como primogênita. Se formos espertas, podemos trabalhar juntas. E colocar cada um em seu devido lugar.
             </p>
+
+            {/* DIÁLOGO DE HELENA */}
             <p className="text-justify indent-8 leading-relaxed text-violet-400">
               Ao ouvir essas palavras, Helena se move como sombra que aprendeu a respirar sozinha. Ela não caminha — desliza. Como se o chão tivesse medo de fazê-la tropeçar.
             </p>
@@ -101,6 +108,8 @@ export default function HelenaENadinePage() {
             <p className="text-justify indent-8 leading-relaxed text-violet-400">
               Você foi moldada por ele. Aceite. Ele está dentro de você. Não apenas no sangue. Na forma como pensa. Na forma como duvida de si mesma… Eu admito que o que você fez hoje foi ousado, mas qual o verdadeiro motivo por trás disso? Deseja poder ou vingança? Deseja matá-lo? Deseja humilhá-lo? Já fui uma filha rebelde antes… Nunca é tão simples quanto parece. Se deseja uma aliança comigo Nadine, preciso que ponha as cartas na mesa. Me diga: o que sente por ele?
             </p>
+
+            {/* DIÁLOGO DE NAADINE */}
             <p className="text-justify indent-8 leading-relaxed text-rose-500">
               — Helena... Fui moldada como uma arma. Uma arma para ser usada no futuro. E, nesse tempo... fiquei muito tempo guardada. Trancada por ele. Em que o mesmo ficava esperando o momento certo para me usar.
             </p>
@@ -153,7 +162,7 @@ export default function HelenaENadinePage() {
               Assim ele ficaria em dúvida sobre o que sinto. E eu não.
             </p>
             <p className="text-justify indent-8 leading-relaxed text-rose-500">
-              Antes de vocês conhecerem ... ele cometeu atrocidades. Anos atrás, ele fazia experimentos com pessoas. Homens. Mulheres.
+              Antes de vocês conhecerem... ele cometeu atrocidades. Anos atrás, ele fazia experimentos com pessoas. Homens. Mulheres.
             </p>
             <p className="text-justify indent-8 leading-relaxed text-rose-500">
               E eu fazia parte disso. Como se fosse um dicionário. Um livro de consulta. Eu estava lá.
@@ -203,11 +212,10 @@ export default function HelenaENadinePage() {
             <p className="text-justify indent-8 leading-relaxed text-rose-500">
               Eu estarei como juíza.
             </p>
+
+            {/* DIÁLOGO DE HELENA */}
             <p className="text-justify indent-8 leading-relaxed text-violet-400">
-              Helena ouve Nadine com atenção cirúrgica.
-            </p>
-            <p className="text-justify indent-8 leading-relaxed text-violet-400">
-              Cada palavra é uma incisão. Cada pausa, um corte mais fundo. Ela não interrompe. Não precisa. Ela deixa Nadine se abrir — como faz com os cadáveres que examina. Deixa que ela exponha a si mesma, que mostre suas feridas internas, seus músculos de intenção, suas veias de ódio.
+              Helena ouve Nadine com atenção cirúrgica. Cada palavra é uma incisão. Cada pausa, um corte mais fundo. Ela não interrompe. Não precisa. Ela deixa Nadine se abrir — como faz com os cadáveres que examina. Deixa que ela exponha a si mesma, que mostre suas feridas internas, seus músculos de intenção, suas veias de ódio.
             </p>
             <p className="text-justify indent-8 leading-relaxed text-violet-400">
               Quando fala, sua voz sai diferente. Sem raiva. Sem pena. Com verdade. Menos cortante. Como se lidasse com algo frágil, uma chama queimando o próprio pavio depressa demais.
@@ -233,6 +241,8 @@ export default function HelenaENadinePage() {
             <p className="text-justify indent-8 leading-relaxed text-violet-400">
               — Confiaria em mim quando não consegue confiar em si mesma?
             </p>
+
+            {/* DIÁLOGO DE NAADINE */}
             <p className="text-justify indent-8 leading-relaxed text-rose-500">
               — Hoje eu confiei em mim mesma. Eu poderia ter pedido para escolherem ele, mas não.
             </p>
@@ -251,11 +261,13 @@ export default function HelenaENadinePage() {
             <p className="text-justify indent-8 leading-relaxed text-rose-500">
               — Eu vou conseguir. Mesmo que precise sangrar cada lembrança que ele me deixou.
             </p>
+
+            {/* DIÁLOGO DE HELENA */}
             <p className="text-justify indent-8 leading-relaxed text-violet-400">
               Helena invade o espaço da Nadine. Ela observa, julga, e circula como sombra.
             </p>
             <p className="text-justify indent-8 leading-relaxed text-violet-400">
-              — Se veio para um velório e me quer como celebrante, o farei, mas eu não enterro defuntos que respiram. Nem enterro partes de uma vida. Enterro cadáveres inteiros, enterro visões, enterro sonhos, tudo isso com a terra da verdade.
+              — Se veio para um velório e me quer como celebrante, o farei, mas eu não enterro defuntos que respiram. Nem enterro partes de uma vida. Enterro cadáveres inteiros, enterro visões, enterro sonhos, enterro fantasias, tudo isso com a terra da verdade.
             </p>
             <p className="text-justify indent-8 leading-relaxed text-violet-400">
               — Pois bem... Acho que você nunca foi devidamente enterrada, não é? EU COMEÇO!
@@ -266,6 +278,8 @@ export default function HelenaENadinePage() {
             <p className="text-justify indent-8 leading-relaxed text-violet-400">
               — Porque és pó e ao pó voltarás! Quem deseja dar um último adeus à Nadine Anoura? Campeã da caminhada em linha reta, dos soluços empapados e da rebeldia? Quem será a primeira pessoa a se despedir de uma alma tão penada e cheia de dentes?
             </p>
+
+            {/* FINAL */}
             <p className="text-justify indent-8 leading-relaxed text-rose-500">
               Nadine cai de joelhos com as palavras de Helena. A mesma fica ali intacta olhando pro nada apenas relembrando tudo que viveu até o momento.
             </p>
@@ -278,8 +292,10 @@ export default function HelenaENadinePage() {
             <p className="text-justify indent-8 leading-relaxed text-rose-500">
               — Com sua misericórdia, peço sua ajuda.
             </p>
+
+            {/* DIÁLOGO DE HELENA */}
             <p className="text-justify indent-8 leading-relaxed text-violet-400">
-              Helena riu, pela primeira vez, um riso de satisfação. Helena se inclina para Nadine e fala baixo, como uma mãe consolando sua criança.
+              Helena ri, pela primeira vez, um riso de satisfação. Helena se inclina para Nadine e fala baixo, como uma mãe consolando sua criança.
             </p>
             <p className="text-justify indent-8 leading-relaxed text-violet-400">
               — Não fique de joelhos, Nadine. Erga-se. Os outros irão ajudá-la, isso nunca foi motivo de discussão. Mas… eu não sou os outros. Eu… sinto muito que seu amor por ele tenha se tornado um inferno para você, mas você precisa morrer. Não fisicamente. Isso seria fácil demais.
@@ -290,8 +306,10 @@ export default function HelenaENadinePage() {
             <p className="text-justify indent-8 leading-relaxed text-violet-400">
               — Enterre, Nadine, a esposa, a cria, a amante, a vítima… Acredite, vai se sentir mais leve depois disso.
             </p>
+
+            {/* CONCLUSÃO */}
             <p className="text-justify indent-8 leading-relaxed text-rose-500">
-              Nadine se levantou e foi até o local indicado pela Helena. Já com sua expressão neutra e com o seu olhar vazio, observou aquela cova. Por um momento ela desejou estar ali, morta e em paz. Mas do que vai adiantar morrer agora, depois de tudo que fez pra chegar até onde chegou.
+              Nadine se levantou e foi até o local indicado pela Helena. Já com sua expressão neutra e com o olhar vazio, observou aquela cova. Por um momento ela desejou estar ali, morta e em paz. Mas do que vai adiantar morrer agora, depois de tudo que fez pra chegar até onde chegou.
             </p>
             <p className="text-justify indent-8 leading-relaxed text-rose-500">
               — Ela sabia o que era: apenas uma sobrevivente disfarçada de orgulho. Foi esperta o bastante para se manter viva, mas nunca forte o suficiente para sustentar a realidade.
@@ -302,14 +320,18 @@ export default function HelenaENadinePage() {
             <p className="text-justify indent-8 leading-relaxed text-rose-500">
               — Acho que vou ficar com fome… — disse rindo, sabendo do óbvio.
             </p>
+
+            {/* DIÁLOGO FINAL DE HELENA */}
             <p className="text-justify indent-8 leading-relaxed text-violet-400">
-              — Além de me importunar em meu reduto, ainda quer o meu sangue? Nossa… Você é exigente não é? — Helena ergue o braço, rasgando o tecido de linho que o cobre, revelando uma carne rachada e sangrenta.
+              — Além de me importunar em meu reduto, ainda quer o meu sangue? Nossa… Você é exigente, não é? — Helena ergue o braço, rasgando o tecido de linho que o cobre, revelando uma carne rachada e sangrenta.
             </p>
             <p className="text-justify indent-8 leading-relaxed text-violet-400">
               — Fique à vontade, mas cuidado, talvez você vicie.
             </p>
+
+            {/* FINAL DA CENA */}
             <p className="text-justify indent-8 leading-relaxed text-rose-500">
-              Nadine se aproveitou da deixa, ignorou seu comentário e a mordeu com ferocidade de um Brujah. E logo pensou, quando poderia arrancar dela? Acho que não devo abusar… aliás, já havia tomado esse sangue antes. Talvez ele sempre foi pertencente a mim, mas estava cega o suficiente pra ver.
+              Nadine se aproveitou da deixa, ignorou seu comentário e a mordeu com ferocidade de um Brujah. E logo pensou, quando poderia arrancar dela? Acho que não devo abusar… Aliás, já havia tomado esse sangue antes. Talvez ele sempre foi pertencente a mim, mas eu estava cega o suficiente pra ver.
             </p>
             <p className="text-justify indent-8 leading-relaxed text-rose-500">
               Nadine queria tomar mais, porém se conteve e logo se afastou.
@@ -317,17 +339,20 @@ export default function HelenaENadinePage() {
             <p className="text-justify indent-8 leading-relaxed text-rose-500">
               — Preciso me limpar. Ele vai perceber que tomei o sangue de outro vampiro e é bem provável que me faça tomar o seu sangue em seguida. O que devo fazer?
             </p>
+
             <p className="text-justify indent-8 leading-relaxed text-violet-400">
-              — Durma aqui no dia de hoje, o refúgio da Coterie é o local mais seguro para você, ele não ousará se aproximar de você enquanto estivermos por perto. Amanhã nos reunimos e decidimos melhor. Agora, eu… Eu preciso me retirar. E… É um prazer te conhecer, senhora Nadine.
+              — Durma aqui no dia de hoje. O refúgio da Coterie é o local mais seguro para você. Ele não ousará se aproximar enquanto estivermos por perto. Amanhã nos reunimos e decidimos melhor. Agora, eu… preciso me retirar. E… é um prazer te conhecer, senhora Nadine.
             </p>
             <p className="text-justify indent-8 leading-relaxed text-violet-400">
               — E, Nadine… o negro não combina com você. Você nasceu para brilhar, como as chamas do espírito Brujah. Deixe o negro para os que habitam a escuridão e não têm a mínima intenção de abandoná-la.
             </p>
+
+            {/* FECHAMENTO */}
             <p className="text-justify indent-8 leading-relaxed text-rose-500">
-              Nadine seguiu o conselho de Helena, mas precisava esfriar sua cabeça um pouco, então ela foi para um lugar abandonado na cidade, uma usina. Treinou, se soltou, se sentiu livre por pouco tempo.
+              Nadine seguiu o conselho de Helena, mas precisava esfriar a cabeça um pouco, então foi para um lugar abandonado na cidade, uma usina. Treinou, se soltou, se sentiu livre por pouco tempo.
             </p>
             <p className="text-justify indent-8 leading-relaxed text-rose-500">
-              Voltou para coterie, localizou o seu quarto, se limpou e finalmente dormiu.
+              Voltou para a coterie, localizou o seu quarto, se limpou e finalmente dormiu.
             </p>
           </article>
         </div>
