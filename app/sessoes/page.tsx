@@ -94,6 +94,15 @@ export default function SessoesPage() {
 const sessions = [
   {
     id: "session-20-05-2025",
+    date: "03/06/2025",
+    summary: [
+      "A coterie descobre que o lobisomem Michael Bayle realmente amava Grace. Os lobisomens vão embora da cidade. Victor conta a Nadine seus planos e a proibe de contar a qualquer um.",
+      "A polícia quase descobriu os planos da coterie mas Desmond e Nadine os enganam. Helena fechou negócios com capangas de Capone e ganhou influência com isso. Fim dessa história.",
+    ],
+    notes: "8 pontos de Experiência para Desmond, Emilie, Étienne, Helena e Nadine.",
+  },
+  {
+    id: "session-20-05-2025",
     date: "20/05/2025",
     summary: [
       "Helena é nomeada xerife da cidade, assumindo um papel de maior autoridade e responsabilidade. A coterie enfrenta um perigoso bando do Sabá e consegue eliminar Otávio Consone, um importante membro da seita rival.",
