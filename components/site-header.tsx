@@ -81,6 +81,13 @@ export function SiteHeader() {
                     Roleplay
                   </Link>
                   <Link
+                    href="/sires"
+                    className="border-b border-midnight-700 pb-2 text-gray-200 hover:text-silver-300"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Sires
+                  </Link>
+                  <Link
                     href="/about"
                     className="text-gray-200 hover:text-silver-300"
                     onClick={() => setIsMenuOpen(false)}
@@ -111,6 +118,9 @@ export function SiteHeader() {
             </Link>
             <Link href="/roleplay" className="text-gray-200 hover:text-silver-300">
               Roleplay
+            </Link>
+            <Link href="/sires" className="text-gray-200 hover:text-silver-300">
+              Sires
             </Link>
             <Link href="/about" className="text-gray-200 hover:text-silver-300">
               Sobre
