@@ -98,26 +98,7 @@ export default function JeanBaptisteMoreauPage() {
                 </CardContent>
               </Card>
 
-              {/* Música Tema */}
-              <Card className="bg-midnight-700 text-gray-200">
-                <CardHeader>
-                  <CardTitle className="font-serif text-xl text-silver-300">Música Tema</CardTitle>
-                </CardHeader>
-                <CardContent>
-                    <div className="aspect-video w-full max-w-[500px] mx-auto">
-                      <iframe
-                        src={`https://www.youtube.com/watch?v=0-jVz7Dou4Y}`} 
-                        title="YouTube video player"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                        className="h-full w-full rounded-md"
-                      ></iframe>
-                    </div>
-                </CardContent>
-              </Card>
-            </div>
-
-            {/* Conteúdo principal */}
+              {/* Conteúdo principal */}
             <div className="md:col-span-2 space-y-8">
               {/* Aparência e Presença */}
               <Card className="bg-midnight-700 text-gray-200">
@@ -210,6 +191,25 @@ export default function JeanBaptisteMoreauPage() {
                 <p className="italic text-silver-400">"A mente é o melhor cárcere. Trancamos os corpos, mas mantemos as almas presas com palavras." – Jean-Baptiste Moreau</p>
                 <p className="mt-2 text-right text-sm text-gray-500">— Extraído de anotações pessoais encontradas após sua morte</p>
               </div>
+
+              {/* Música Tema */}
+              <Card className="bg-midnight-700 text-gray-200">
+                <CardHeader>
+                  <CardTitle className="font-serif text-xl text-silver-300">Música Tema</CardTitle>
+                </CardHeader>
+                <CardContent>
+                    <div className="aspect-video w-full max-w-[500px] mx-auto">
+                      <iframe
+                        src={`https://www.youtube.com/watch?v=0-jVz7Dou4Y}`} 
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        className="h-full w-full rounded-md"
+                      ></iframe>
+                    </div>
+                </CardContent>
+              </Card>
+            </div>
 
               {/* Links relacionados */}
               <div className="mt-8 space-y-4">
