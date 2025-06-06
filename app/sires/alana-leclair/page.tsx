@@ -98,6 +98,26 @@ export default function AlanaLeclairPage() {
                   </ul>
                 </CardContent>
               </Card>
+              
+              {/* Música Tema */}
+              <Card className="bg-midnight-700 text-gray-200">
+                <CardHeader>
+                  <CardTitle className="font-serif text-xl text-silver-300">Música Tema</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="aspect-video w-full max-w-[400px] mx-auto">
+                    <iframe
+                      src="https://www.youtube.com/embed/LvFflKsroL8" 
+                      title="YouTube video player"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      className="h-full w-full rounded-md"
+                    ></iframe>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
 
               
             {/* Conteúdo principal */}
@@ -208,25 +228,6 @@ export default function AlanaLeclairPage() {
                 <p className="italic text-silver-400">“O conhecimento verdadeiro não vem dos altares, mas das sombras que eles tentam esconder.” – Alana Leclair</p>
                 <p className="mt-2 text-right text-sm text-gray-500">— Escrito em seu diário perdido</p>
               </div>
-
-              {/* Música Tema */}
-              <Card className="bg-midnight-700 text-gray-200">
-                <CardHeader>
-                  <CardTitle className="font-serif text-xl text-silver-300">Música Tema</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="aspect-video w-full max-w-[400px] mx-auto">
-                    <iframe
-                      src="https://www.youtube.com/embed/LvFflKsroL8" 
-                      title="YouTube video player"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                      className="h-full w-full rounded-md"
-                    ></iframe>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
 
               {/* Links relacionados */}
               <div className="mt-8 space-y-4">
