@@ -30,7 +30,7 @@ export default function VictorBloodwoodPage() {
             ></div>
             <div className="absolute bottom-0 left-0 p-8">
               <h1 className="font-serif text-5xl font-bold text-silver-200">Victor Bloodwood</h1>
-              <p className="mt-2 text-xl text-crimson-500">O Corvo Brujah</p>
+              <p className="mt-2 text-xl text-yellow-500">O Corvo Brujah</p>
             </div>
           </div>
 
