@@ -104,15 +104,15 @@ export default function JeanBaptisteMoreauPage() {
                   <CardTitle className="font-serif text-xl text-silver-300">Música Tema</CardTitle>
                 </CardHeader>
                 <CardContent>
-                    <div className="aspect-video w-full max-w-[500px] mx-auto">
-                      <iframe
-                        src={`https://www.youtube.com/embed/0-jVz7Dou4Y}`} 
-                        title="YouTube video player"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                        className="h-full w-full rounded-md"
-                      ></iframe>
-                    </div>
+                  <div className="aspect-video w-full max-w-[400px] mx-auto">
+                    <iframe
+                      src="https://www.youtube.com/embed/0-jVz7Dou4Y" 
+                      title="YouTube video player"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      className="h-full w-full rounded-md"
+                    ></iframe>
+                  </div>
                 </CardContent>
               </Card>
             </div>
