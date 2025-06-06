@@ -309,7 +309,7 @@ const characters = [
       "Desmond carrega consigo a elegância e os modos refinados de sua educação aristocrática francesa, mas por trás dessa fachada civilizada reside uma ambição implacável e uma sede de poder que o define como um verdadeiro Lasombra.",
       "Sua história familiar começou com seu avô August, que ousou trazer sua família e negócio de bebidas da França para a América. A tradição empreendedora e a coragem foram passadas através das gerações, moldando o caráter de Desmond desde jovem.",
     ],
-    youtubeVideoUrl: "oadhHk2xs6c", // Substitua por ID real
+    youtubeVideoUrl: "VpMVucH095w", // Substitua por ID real
   },
   {
     id: "helena",
