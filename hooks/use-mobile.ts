@@ -1,26 +1,23 @@
-'use client'
+// src/hooks/use-mobile.ts
+import { usePathname } from 'next/navigation'
+import { useEffect, useState } from 'react'
 
-import { useState, useEffect } from "react"
-
-export const useMobile = () => {
+export function useMobile() {
   const [isMobile, setIsMobile] = useState(false)
+  const pathname = usePathname()
 
   useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 768) // Adjust breakpoint as needed
+    const checkIsMobile = () => {
+      setIsMobile(window.innerWidth < 768)
     }
 
-    // Set initial value
-    handleResize()
+    checkIsMobile()
+    window.addEventListener('resize', checkIsMobile)
 
-    // Listen for window resize events
-    window.addEventListener("resize", handleResize)
-
-    // Clean up event listener on unmount
     return () => {
-      window.removeEventListener("resize", handleResize)
+      window.removeEventListener('resize', checkIsMobile)
     }
-  }, [])
+  }, [pathname]) // Atualiza quando a rota muda (opcional)
 
   return isMobile
 }

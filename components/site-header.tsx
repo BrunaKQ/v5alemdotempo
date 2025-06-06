@@ -5,11 +5,11 @@ import Link from 'next/link'
 import { Menu, X } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { useMobile } from '@/hooks/use-mobile'
-import { useRouter } from 'next/router'
+import { usePathname } from 'next/navigation'
 
 export function SiteHeader() {
   const isMobile = useMobile()
-  const router = useRouter()
+  const pathname = usePathname()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const menuRef = useRef<HTMLDivElement>(null)
 
@@ -64,7 +64,7 @@ export function SiteHeader() {
                   <Link
                     href="/"
                     className={`border-b border-midnight-700 pb-2 hover:text-silver-300 ${
-                      router.pathname === '/' ? 'text-crimson-400' : 'text-gray-200'
+                      pathname === '/' ? 'text-crimson-400' : 'text-gray-200'
                     }`}
                     onClick={() => setIsMenuOpen(false)}
                   >
@@ -73,7 +73,7 @@ export function SiteHeader() {
                   <Link
                     href="/coterie"
                     className={`border-b border-midnight-700 pb-2 hover:text-silver-300 ${
-                      router.pathname === '/coterie' ? 'text-crimson-400' : 'text-gray-200'
+                      pathname === '/coterie' ? 'text-crimson-400' : 'text-gray-200'
                     }`}
                     onClick={() => setIsMenuOpen(false)}
                   >
@@ -82,7 +82,7 @@ export function SiteHeader() {
                   <Link
                     href="/sires"
                     className={`border-b border-midnight-700 pb-2 hover:text-silver-300 ${
-                      router.pathname === '/sires' ? 'text-crimson-400' : 'text-gray-200'
+                      pathname === '/sires' ? 'text-crimson-400' : 'text-gray-200'
                     }`}
                     onClick={() => setIsMenuOpen(false)}
                   >
@@ -91,7 +91,7 @@ export function SiteHeader() {
                   <Link
                     href="/sessoes"
                     className={`border-b border-midnight-700 pb-2 hover:text-silver-300 ${
-                      router.pathname === '/sessoes' ? 'text-crimson-400' : 'text-gray-200'
+                      pathname === '/sessoes' ? 'text-crimson-400' : 'text-gray-200'
                     }`}
                     onClick={() => setIsMenuOpen(false)}
                   >
@@ -100,7 +100,7 @@ export function SiteHeader() {
                   <Link
                     href="/elysium"
                     className={`border-b border-midnight-700 pb-2 hover:text-silver-300 ${
-                      router.pathname === '/elysium' ? 'text-crimson-400' : 'text-gray-200'
+                      pathname === '/elysium' ? 'text-crimson-400' : 'text-gray-200'
                     }`}
                     onClick={() => setIsMenuOpen(false)}
                   >
@@ -109,7 +109,7 @@ export function SiteHeader() {
                   <Link
                     href="/memoriam"
                     className={`border-b border-midnight-700 pb-2 hover:text-silver-300 ${
-                      router.pathname === '/memoriam' ? 'text-crimson-400' : 'text-gray-200'
+                      pathname === '/memoriam' ? 'text-crimson-400' : 'text-gray-200'
                     }`}
                     onClick={() => setIsMenuOpen(false)}
                   >
@@ -118,7 +118,7 @@ export function SiteHeader() {
                   <Link
                     href="/roleplay"
                     className={`border-b border-midnight-700 pb-2 hover:text-silver-300 ${
-                      router.pathname === '/roleplay' ? 'text-crimson-400' : 'text-gray-200'
+                      pathname === '/roleplay' ? 'text-crimson-400' : 'text-gray-200'
                     }`}
                     onClick={() => setIsMenuOpen(false)}
                   >
@@ -127,7 +127,7 @@ export function SiteHeader() {
                   <Link
                     href="/about"
                     className={`hover:text-silver-300 ${
-                      router.pathname === '/about' ? 'text-crimson-400' : 'text-gray-200'
+                      pathname === '/about' ? 'text-crimson-400' : 'text-gray-200'
                     }`}
                     onClick={() => setIsMenuOpen(false)}
                   >
@@ -143,7 +143,7 @@ export function SiteHeader() {
             <Link
               href="/"
               className={`hover:text-silver-300 ${
-                router.pathname === '/' ? 'text-crimson-400' : 'text-gray-200'
+                pathname === '/' ? 'text-crimson-400' : 'text-gray-200'
               }`}
             >
               Início
@@ -151,7 +151,7 @@ export function SiteHeader() {
             <Link
               href="/coterie"
               className={`hover:text-silver-300 ${
-                router.pathname === '/coterie' ? 'text-crimson-400' : 'text-gray-200'
+                pathname === '/coterie' ? 'text-crimson-400' : 'text-gray-200'
               }`}
             >
               A Coterie
@@ -159,7 +159,7 @@ export function SiteHeader() {
             <Link
               href="/sires"
               className={`hover:text-silver-300 ${
-                router.pathname === '/sires' ? 'text-crimson-400' : 'text-gray-200'
+                pathname === '/sires' ? 'text-crimson-400' : 'text-gray-200'
               }`}
             >
               Sires
@@ -167,7 +167,7 @@ export function SiteHeader() {
             <Link
               href="/sessoes"
               className={`hover:text-silver-300 ${
-                router.pathname === '/sessoes' ? 'text-crimson-400' : 'text-gray-200'
+                pathname === '/sessoes' ? 'text-crimson-400' : 'text-gray-200'
               }`}
             >
               Sessões
@@ -175,7 +175,7 @@ export function SiteHeader() {
             <Link
               href="/elysium"
               className={`hover:text-silver-300 ${
-                router.pathname === '/elysium' ? 'text-crimson-400' : 'text-gray-200'
+                pathname === '/elysium' ? 'text-crimson-400' : 'text-gray-200'
               }`}
             >
               Elysium
@@ -183,7 +183,7 @@ export function SiteHeader() {
             <Link
               href="/memoriam"
               className={`hover:text-silver-300 ${
-                router.pathname === '/memoriam' ? 'text-crimson-400' : 'text-gray-200'
+                pathname === '/memoriam' ? 'text-crimson-400' : 'text-gray-200'
               }`}
             >
               In Memoriam
@@ -191,7 +191,7 @@ export function SiteHeader() {
             <Link
               href="/roleplay"
               className={`hover:text-silver-300 ${
-                router.pathname === '/roleplay' ? 'text-crimson-400' : 'text-gray-200'
+                pathname === '/roleplay' ? 'text-crimson-400' : 'text-gray-200'
               }`}
             >
               Roleplay
@@ -199,7 +199,7 @@ export function SiteHeader() {
             <Link
               href="/about"
               className={`hover:text-silver-300 ${
-                router.pathname === '/about' ? 'text-crimson-400' : 'text-gray-200'
+                pathname === '/about' ? 'text-crimson-400' : 'text-gray-200'
               }`}
             >
               Sobre
