@@ -59,11 +59,11 @@ export default function SiresPage() {
 
             {/* Jean-Baptiste Moreau */}
             <Link
-              href="/sires/jean-baptiste-moreau"
+              href="/sires/jean-baptiste"
               className="flex items-center gap-3 rounded p-3 text-gray-300 hover:bg-midnight-800 hover:text-silver-200"
             >
               <BookOpen className="h-4 w-4 text-crimson-500" />
-              <span>🎭 Jean-Baptiste Moreau - O Malkaviano Sádico </span>
+              <span>🎭 Jean-Baptiste Moreau - O Malkaviano Sádico</span>
             
             </Link>
           </div>

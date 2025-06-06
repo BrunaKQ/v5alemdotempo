@@ -107,6 +107,9 @@ export function SiteHeader() {
             <Link href="/coterie" className="text-gray-200 hover:text-silver-300">
               A Coterie
             </Link>
+             <Link href="/sires" className="text-gray-200 hover:text-silver-300">
+              Sires
+            </Link>
             <Link href="/sessoes" className="text-gray-200 hover:text-silver-300">
               Sessões
             </Link>
@@ -119,10 +122,7 @@ export function SiteHeader() {
             <Link href="/roleplay" className="text-gray-200 hover:text-silver-300">
               Roleplay
             </Link>
-            <Link href="/sires" className="text-gray-200 hover:text-silver-300">
-              Sires
-            </Link>
-            <Link href="/about" className="text-gray-200 hover:text-silver-300">
+           <Link href="/about" className="text-gray-200 hover:text-silver-300">
               Sobre
             </Link>
           </nav>
