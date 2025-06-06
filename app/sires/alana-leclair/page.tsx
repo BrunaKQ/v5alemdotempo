@@ -94,11 +94,11 @@ export default function AlanaLeclairPage() {
                   <ul className="list-disc space-y-2 pl-5 text-sm text-gray-300">
                     <li><strong>Feitiçaria de Sangue</strong>: Manipulação mágica através de sangue próprio ou alheio.</li>
                     <li><strong>Auspícios</strong>: Habilidade de ver além dos véus do tempo e da mentira.</li>
-                    <li><strong>Dominação</strong>: Capacidade de dobrar a vontade de mortais e vampiros.</li>
+                    <li><strong>Oblívio</strong>: Capacidade de desaparecer da memória e percepção dos mortais.</li>
                   </ul>
                 </CardContent>
               </Card>
-              
+
               {/* Música Tema */}
               <Card className="bg-midnight-700 text-gray-200">
                 <CardHeader>
@@ -107,7 +107,7 @@ export default function AlanaLeclairPage() {
                 <CardContent>
                   <div className="aspect-video w-full max-w-[400px] mx-auto">
                     <iframe
-                      src="https://www.youtube.com/embed/LvFflKsroL8" 
+                      src="https://www.youtube.com/embed/MwwWvhlrmq0" 
                       title="YouTube video player"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
@@ -118,8 +118,6 @@ export default function AlanaLeclairPage() {
               </Card>
             </div>
 
-
-              
             {/* Conteúdo principal */}
             <div className="md:col-span-2 space-y-8">
               {/* Aparência e Presença */}
@@ -186,13 +184,13 @@ export default function AlanaLeclairPage() {
                     Mais de um século depois, Alana observava discretamente os círculos acadêmicos, curiosa sobre jovens mortais com potencial oculto. Foi numa noite, durante uma conferência sobre história e ocultismo, que viu novamente algo familiar: Étienne Moreau.
                   </p>
                   <p className="text-justify indent-8 leading-relaxed text-gray-300 mt-4">
-                    Ele era carismático, eloquente, e em meio a um discurso sobre rituais antigos e mitos modernos, Alana sentiu um frio familiar. A maneira como ele sorria, a firmeza da sua voz, os olhos claros que pareciam enxergar além das palavras — tudo nela gritava “Jules”. O corpo era diferente, mas a alma… ela juraria que era a mesma.
+                    Ele era carismático, eloquente, e em meio a um discurso sobre rituais antigos e mitos modernos, Alana sentiu um frio familiar. A maneira como ele sorria, a firmeza de sua voz, os olhos claros que pareciam enxergar além das palavras — tudo nela gritava “Jules”. O corpo era diferente, mas a alma… ela juraria que era a mesma.
                   </p>
                   <p className="text-justify indent-8 leading-relaxed text-gray-300 mt-4">
                     Alana passou a observar Étienne mais de perto, fascinada. Ela o testou — deixou pistas, documentos ocultos, fez com que ele encontrasse livros raros, fragmentos de conhecimento perdido. Étienne seguiu cada rastro com sede de verdade, e Alana soube que ele estava pronto. Mas havia mais: ela não o via apenas como talento. Via nele a chance de corrigir um erro do passado. De não se calar diante de um destino imposto.
                   </p>
                   <p className="text-justify indent-8 leading-relaxed text-gray-300 mt-4">
-                    Na última noite de Étienne como mortal, Alana o levou para sua mansão, onde selou seu destino. O Abraçou, concedendo-lhe vida eterna, liberdade intelectual e um vínculo profundo com o oculto. Ela jamais lhe contou sobre Jules... ainda.
+                    Na última noite de Étienne como mortal, Alana o levou para sua mansão, onde selou seu destino. O abraçou, concedendo-lhe vida eterna, liberdade intelectual e um vínculo profundo com o oculto. Ela jamais lhe contou sobre Jules... ainda.
                   </p>
                 </CardContent>
               </Card>
@@ -241,7 +239,7 @@ export default function AlanaLeclairPage() {
 
                 <Link
                   href="/elysium"
-                  className="flex items-center justify-between rounded bg-midnight-800 p-3 text-sm hover:bg-midnight-600"
+                  className="flex items-center justify-between rounded bg-midfast-800 p-3 text-sm hover:bg-midnight-600"
                 >
                   <span>👑 Ver outros NPCs importantes</span>
                   <ChevronRight className="h-4 w-4 text-dodgerblue-500" />

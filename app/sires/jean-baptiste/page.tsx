@@ -106,7 +106,7 @@ export default function JeanBaptisteMoreauPage() {
                 <CardContent>
                     <div className="aspect-video w-full max-w-[500px] mx-auto">
                       <iframe
-                        src={`https://www.youtube.com/watch?v=0-jVz7Dou4Y}`} 
+                        src={`https://www.youtube.com/embed/0-jVz7Dou4Y}`} 
                         title="YouTube video player"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
