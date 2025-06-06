@@ -1,13 +1,13 @@
 'use client'
 
-import Link from "next/link"
-import { ArrowLeft, ChevronRight } from "lucide-react"
-import Image from "next/image"
+import Link from 'next/link'
+import { ArrowLeft, ChevronRight } from 'lucide-react'
+import Image from 'next/image'
 
-import { SiteHeader } from "@/components/site-header"
-import { SiteFooter } from "@/components/site-footer"
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
+import { SiteHeader } from '@/components/site-header'
+import { SiteFooter } from '@/components/site-footer'
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+import { Badge } from '@/components/ui/badge'
 
 export default function VictorBloodwoodPage() {
   return (
@@ -62,11 +62,11 @@ export default function VictorBloodwoodPage() {
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-gray-400">Geração:</span>
-                    <span className="text-silver-300">9ª</span>
+                    <span className="text-silver-300">9ª Geração</span>
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-gray-400">Século de Nascimento:</span>
-                    <span className="text-silver-300">XV</span>
+                    <span className="text-silver-300">XII</span>
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-gray-400">Localização:</span>
@@ -89,35 +89,10 @@ export default function VictorBloodwoodPage() {
                 <CardContent>
                   <ul className="list-disc space-y-2 pl-5 text-sm text-gray-300">
                     <li><strong>Potência</strong>: Força sobre-humana e brutalidade refinada.</li>
-                    <li><strong>Celeridade</strong>: Movimentos rápidos e quase imperceptíveis.</li>
+                    <li><strong>Rapidez</strong>: Movimentos rápidos e quase imperceptíveis.</li>
                     <li><strong>Presença</strong>: Domínio absoluto sobre emoções e vontades alheias.</li>
-                    </ul>
-                </CardContent>
-              </Card>
-
-              {/* Rumores */}
-              <Card className="bg-midnight-700 text-gray-200">
-                <CardHeader>
-                  <CardTitle className="flex items-center font-serif text-xl text-silver-300">
-                    <span className="mr-2 h-5 w-5 text-crimson-500">⚠️</span>Rumores
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <div className="rounded bg-midnight-800 p-4">
-                    <p className="text-sm text-gray-300">
-                      O Corvo apareceu antes da queda de cada Príncipe. Nunca envolvido... mas sempre presente.
-                    </p>
-                  </div>
-                  <div className="rounded bg-midnight-800 p-4">
-                    <p className="text-sm text-gray-300">
-                      Alguns acreditam que ele tenha feito pacto com entidades antigas — algo pior que vampiros.
-                    </p>
-                  </div>
-                  <div className="rounded bg-midnight-800 p-4">
-                    <p className="text-sm text-gray-300">
-                      Ele vê em Nadine não apenas uma cria, mas seu maior desafio pessoal. Ela é a única que se recusa a ser moldada.
-                    </p>
-                  </div>
+                    <li><strong>Oblívio</strong>: Capacidade de apagar sua presença da memória humana.</li>
+                  </ul>
                 </CardContent>
               </Card>
 
@@ -188,6 +163,37 @@ export default function VictorBloodwoodPage() {
                 </CardContent>
               </Card>
 
+              {/* Rumores */}
+              <Card className="bg-midnight-700 text-gray-200">
+                <CardHeader>
+                  <CardTitle className="flex items-center font-serif text-xl text-silver-300">
+                    <span className="mr-2 h-5 w-5 text-crimson-500">⚠️</span>Rumores
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div className="rounded bg-midnight-800 p-4">
+                    <p className="text-sm text-gray-300">
+                      O Corvo apareceu antes da queda de cada Príncipe. Nunca envolvido... mas sempre presente.
+                    </p>
+                  </div>
+                  <div className="rounded bg-midnight-800 p-4">
+                    <p className="text-sm text-gray-300">
+                      Alguns acreditam que ele tenha feito pacto com entidades antigas — algo pior que vampiros.
+                    </p>
+                  </div>
+                  <div className="rounded bg-midnight-800 p-4">
+                    <p className="text-sm text-gray-300">
+                      Entre os mortais, continua sendo conhecido como Le Corbeau, o magnata excêntrico, investidor misterioso, benfeitor de orfanatos decadentes e salões culturais esquecidos.
+                    </p>
+                  </div>
+                  <div className="rounded bg-midnight-800 p-4">
+                    <p className="text-sm text-gray-300">
+                      Os membros mais jovens da Camarilla local mal o conhecem, mas ouvem histórias: Que ele pode manipular suas emoções com um olhar. Que consegue prever traições antes que sejam cometidas.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+
               {/* Relação com Nadine */}
               <Card className="bg-midnight-700 text-gray-200">
                 <CardHeader>
@@ -197,10 +203,10 @@ export default function VictorBloodwoodPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-justify indent-8 leading-relaxed text-gray-300">
-                    No entanto, há uma rachadura em sua muralha de silêncio: Nadine. Ela é sua criação mais ousada. E a única que se recusa a ser moldada.
+                    Há uma rachadura em sua muralha de silêncio: Nadine. Ela é sua criação mais ousada. E a única que se recusa a ser moldada.
                   </p>
                   <p className="text-justify indent-8 leading-relaxed text-gray-300 mt-4">
-                    Desde sua fuga e volta, Victor tornou-se ainda mais contido e um pouco até enfraquecido. Nova Orleans continua sendo sua cidade. Mas ela também pode ser seu campo de batalha.
+                    Desde sua fuga e volta, Victor tornou-se ainda mais contido e um pouco enfraquecido. Nova Orleans continua sendo sua cidade. Mas ela também pode ser seu campo de batalha.
                   </p>
                   <p className="text-justify indent-8 leading-relaxed text-gray-300 mt-4">
                     Victor Bloodwood está vivo. E ninguém sabe exatamente o que ele planeja. Mas todos sabem disso: quem duvidar dele… pagará o preço.
