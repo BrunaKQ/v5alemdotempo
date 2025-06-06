@@ -16,11 +16,10 @@ export default function JeanBaptisteMoreauPage() {
       <main className="flex-1">
         <div className="mx-auto max-w-5xl px-4 py-12 sm:px-6 lg:px-8">
           {/* Breadcrumb */}
-          <Link href="/coterie" className="mb-6 inline-flex items-center text-sm text-gray-400 hover:text-amber-400">
+          <Link href="/sires" className="mb-6 inline-flex items-center text-sm text-gray-400 hover:text-amber-400">
             <ArrowLeft className="mr-2 h-4 w-4" />
-            Voltar para Coterie
+            Voltar para Sires
           </Link>
-
           {/* Capa com imagem de fundo */}
           <div className="relative h-[300px] w-full overflow-hidden rounded-t-lg">
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-70" />
