@@ -48,13 +48,13 @@ export default function SiresPage() {
               <span>👁️ Kael Vane — O Nosferatu Silencioso</span>
             </Link>
 
-            {/* Alana de Montreuil */}
+            {/* Alana de Leclair */}
             <Link
-              href="/sires/alana-de-montreuil"
+              href="/sires/alana-leclair"
               className="flex items-center gap-3 rounded p-3 text-gray-300 hover:bg-midnight-800 hover:text-silver-200"
             >
               <BookOpen className="h-4 w-4 text-crimson-500" />
-              <span>🔮 Alana de Montreuil — A Tremere Enigmática</span>
+              <span>🔮 Alana Leclair — A Tremere Enigmática</span>
             </Link>
 
             {/* Jean-Baptiste Moreau */}
