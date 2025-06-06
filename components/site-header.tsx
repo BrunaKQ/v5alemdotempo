@@ -57,6 +57,13 @@ export function SiteHeader() {
                     className="border-b border-midnight-700 pb-2 text-gray-200 hover:text-silver-300"
                     onClick={() => setIsMenuOpen(false)}
                   >
+                   Sires
+                  </Link>
+                  <Link
+                    href="/about"
+                    className="text-gray-200 hover:text-silver-300"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
                     Sessões
                   </Link>
                   <Link
@@ -84,14 +91,7 @@ export function SiteHeader() {
                     href="/sires"
                     className="border-b border-midnight-700 pb-2 text-gray-200 hover:text-silver-300"
                     onClick={() => setIsMenuOpen(false)}
-                  >
-                    Sires
-                  </Link>
-                  <Link
-                    href="/about"
-                    className="text-gray-200 hover:text-silver-300"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
+
                     Sobre
                   </Link>
                 </nav>
