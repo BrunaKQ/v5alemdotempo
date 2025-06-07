@@ -89,7 +89,7 @@ export default function SessoesPage() {
                       <img
                         src={session.image}
                         alt={`Imagem da sessão de ${session.date}`}
-                        className="w-full h-48 md:h-64 object-cover rounded-md shadow-md"
+                        className="max-w-full h-auto rounded-md shadow-md"
                       />
                     </div>
                   )}
@@ -108,15 +108,13 @@ const sessions = [
   {
     id: "session-03-06-2025",
     date: "03/06/2025",
-    image: "/imagens/sessao-03-06-2025.jpg", // ← Exemplo de imagem específica
+    image: "/images/capa-sessao-03-06-2025.jpg", // ← Exemplo de imagem específica
     summary: [
-      "É noite de Halloween. Mas a cidade ainda sente o impacto da queda da bolsa, por isso, as ressonâncias no sangue do gado continuam sempre limitadas à cólera e à melancolia. O que talvez explique os acontecimentos da noite. Nadine procura representantes de seu clã para firmar seu compromisso de concorrer à primogenitura. Fica surpresa ao encontrar seu senhor, Victor Bloodwood no meio deles.",
-      "A Nadine tem intenção de desafiar o seu Senhor, que rebate dizendo que ela não passa de um peão nas mãos dele, e que ele em si não tem interesse algum na primogenitura. Nadine tenta em vão resistir às ordens de seu marido e senhor, mas o laço em que está presa lhe corrompe a vontade e ela cede aos caprichos de seu amo. Victor fala de seus planos para com os baixos clãs da cidade, Ravnos inclusos, e parece garantir que não haverá embrólios entre os baixos clãs e a Torre, porém, fica claro para todos que ele deixará Nadine em rota de colisão com os interesses da coterie, pois ele a ordena segredo absoluto.",
-      "Ao voltar para o Refúgio, Nadine demonstra toda sua frustração destruindo os móveis de seu quarto. Mesmo estando em laço, Nadine faz o que pode para alertar a Coterie sobre os planos de Victor, mas é impedida cruelmente de dizer qualquer coisa, no entanto, Emilie usa seus poderes de Auspícios e obtém informações muito úteis no futuro.",
-      "Em uma breve reunião, a coterie entende que Nadine fará tudo pelo seu senhor, no entanto, assumirão o risco e não a deixarão de lado a menos que seja estritamente necessário.",
-      "Helena revela seus planos de receber Al Capone na cidade. A coterie se divide. Desmond e Nadine contam com os carniçais Malcom, Alfredo e Vix, para trocar a carga que estava sendo traficada por lobisomens e conseguem fazer isso literalmente debaixo dos narizes deles. A polícia quase descobre os planos da coterie, mas Desmond e Nadine os enganam.",
-      "Enquanto isso, Emilie, Étienne e Helena seguem para a casa da advogada Grace Thompson, pilar de Helena. A coterie descobre que o lobisomem Michael Bayle realmente amava Grace, mas ambos lobisomens estavam saindo da cidade. Ao que deu a entender, ambos lobisomens estavam fugindo da polícia, mas o verdadeiro motivo por trás das ações deles permanece um mistério.",
-      "Helena fecha com sucesso os negócios com capangas de Capone e ganha influência com isso."
+      "Na noite de Halloween, em meio à tensão social pós-queda da bolsa, Nadine busca apoio de seu clã para concorrer à primogenitura, mas se surpreende com a presença de seu senhor e marido, Victor Bloodwood. Ele a humilha, afirmando que ela é apenas um peão e que não tem interesse direto no cargo, mas a obriga, por meio do laço de sangue, a seguir suas ordens: manter segredo absoluto e entrar em conflito com a coterie.",
+      "Ao retornar ao refúgio, Nadine, mesmo sob domínio de Victor, tenta alertar a coterie sobre os planos dele, mas falha devido ao laço. Emilie usa seus poderes de Auspícios para obter informações sobre o futuro e consegue insights valiosos. A coterie decide continuar contando com Nadine, apesar dos riscos.",
+      "Enquanto isso, Helena planeja receber Al Capone na cidade. Desmond e Nadine, com ajuda dos carniçais Malcom, Alfredo e Vix, trocam uma carga traficada pelos lobisomens sem serem notados — escapando por pouco da polícia.",
+      "Paralelamente, Emilie, Étienne e Helena visitam Grace Thompson, aliada de Helena, e descobrem que o lobisomem Michael Bayle a amava e que ele e outro lobisomem estavam deixando a cidade — supostamente fugindo da polícia, embora o verdadeiro motivo permaneça misterioso.",
+      "Helena fecha negócios com capangas de Al Capone, aumentando sua influência na cidade.",
     ],
     notes: "8 pontos de Experiência para Desmond, Emilie, Étienne, Helena e Nadine.",
   },
