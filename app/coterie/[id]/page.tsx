@@ -243,7 +243,7 @@ const characters = [
   {
     id: "nadine",
     name: "Nadine Anoura",
-    image: "/images/nadine.jpg",
+    image: "/images/nadine-portrait.png",
     clan: "Brujah",
     generation: 10,
     sect: "Camarilla",

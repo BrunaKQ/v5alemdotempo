@@ -37,6 +37,13 @@ export default function ElysiumPage() {
               <span>⚔️ NPC Senescal William Crawford</span>
             </Link>
             <Link
+              href="/elysium/louis-beaumont"
+              className="flex items-center gap-3 rounded p-3 text-gray-300 hover:bg-midnight-800 hover:text-silver-200"
+            >
+              <BookOpen className="h-4 w-4 text-crimson-500" />
+              <span>🌹 NPC Loius Beaumont</span>
+            </Link>
+            <Link
               href="/elysium/thomas-coen"
               className="flex items-center gap-3 rounded p-3 text-gray-300 hover:bg-midnight-800 hover:text-silver-200"
             >
