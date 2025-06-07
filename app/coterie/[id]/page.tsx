@@ -314,7 +314,7 @@ const characters = [
   {
     id: "helena",
     name: "Helena Stryker",
-    image: "/images/ezgif-187bbe49a97517.gif",
+    image: "/images/Helena-3.png",
     clan: "Nosferatu",
     generation: 10,
     sect: "Camarilla",
@@ -325,7 +325,7 @@ const characters = [
     location: "Laffayette Cemetery",
     nature: "Investigadora",
     demeanor: "Soturna",
-    disciplines: ["Animalismo", "Potência", "Ofuscação"],
+    disciplines: ["Animalismo", "Potência", "Ofuscação", "Auspícios"],
     background:
       "Margareth Ogden Armour nasceu em 1843 em Nova York, filha mais velha de Philip Danforth Armour, industrial da carne, e Malvina Belle Ogden, uma mulher de fé frágil e coração forte. Desde jovem, mostrou-se excepcionalmente inteligente, com interesse precoce por anatomia, medicina e patologia — áreas dominadas por homens na época. Helena se destacou desde cedo por sua inteligência afiada e fascínio pela anatomia, tornando-se médica-legista antes de seu desaparecimento em 1868, onde foi considerada morta em um acidente. Na verdade, ela foi abraçada por Kael Vane, então Diretor e mentor dela no Presbyterian Hospital of Chicago, após descobrir segredos que não deveria ter visto — verdades ocultas em cadáveres e documentos proibidos.",
     story: [
