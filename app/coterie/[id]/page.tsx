@@ -347,7 +347,7 @@ const characters = [
     location: "Garden District",
     nature: "Revoltado",
     demeanor: "Intelectual",
-    disciplines: ["Feitiçaria de Sangue", "Auspícios", "Dominação"],
+    disciplines: ["Feitiçaria de Sangue", "Auspícios", "Dominação", "Ofuscação", "Proteanismo"],
     background:
       "Filho de uma família burguesa francesa, Étienne nasceu em Lyon no início da Revolução Francesa. Professor universitário e ativista político, ele lutou por ideais de liberdade, igualdade e fraternidade até ser transformado por Alana de Montreuil, uma Tremere que via nele o potencial para unir o saber humano às artes ocultas.",
     story: [
