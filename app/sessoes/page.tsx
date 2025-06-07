@@ -1,5 +1,4 @@
 import { Clock, Users } from "lucide-react"
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { SiteHeader } from "@/components/site-header"
@@ -23,7 +22,6 @@ export default function SessoesPage() {
               luz fria da lua.
             </p>
           </div>
-
           <div className="mb-8 rounded-lg bg-midnight-800 p-6">
             <div className="flex items-center gap-4 mb-4">
               <div className="flex items-center gap-2">
@@ -47,40 +45,55 @@ export default function SessoesPage() {
 
           <div className="space-y-6">
             {sessions.map((session) => (
-              <Card key={session.id} className="bg-midnight-700 text-gray-200">
-                <CardHeader className="border-b border-midnight-600">
-                  <div className="flex items-start justify-between">
-                    <div>
-                      <CardTitle className="font-serif text-xl text-silver-300">Sessão {session.date}</CardTitle>
-                      <div className="mt-2 flex items-center gap-4 text-sm text-gray-400">
-                        <div className="flex items-center gap-1">
-                          <Clock className="h-4 w-4" />
-                          <span>4 horas</span>
+              <Card key={session.id} className="bg-midnight-700 text-gray-200 overflow-hidden">
+                <div className="flex flex-col md:flex-row">
+                  {/* Conteúdo principal */}
+                  <div className={`flex-1 p-6 ${session.image ? "md:w-2/3" : "w-full"}`}>
+                    <CardHeader className="border-b border-midnight-600 pb-4">
+                      <div className="flex items-start justify-between">
+                        <div>
+                          <CardTitle className="font-serif text-xl text-silver-300">Sessão {session.date}</CardTitle>
+                          <div className="mt-2 flex items-center gap-4 text-sm text-gray-400">
+                            <div className="flex items-center gap-1">
+                              <Clock className="h-4 w-4" />
+                              <span>4 horas</span>
+                            </div>
+                          </div>
                         </div>
+                        {session.special && (
+                          <Badge variant="outline" className="border-yellow-600 text-yellow-400">
+                            {session.special}
+                          </Badge>
+                        )}
                       </div>
-                    </div>
-                    {session.special && (
-                      <Badge variant="outline" className="border-yellow-600 text-yellow-400">
-                        {session.special}
-                      </Badge>
-                    )}
-                  </div>
-                </CardHeader>
-                <CardContent className="pt-4">
-                  <div className="space-y-4">
-                    {session.summary.map((paragraph, index) => (
-                      <p key={index} className="text-gray-300">
-                        {paragraph}
-                      </p>
-                    ))}
+                    </CardHeader>
+                    <CardContent className="pt-4">
+                      <div className="space-y-4">
+                        {session.summary.map((paragraph, index) => (
+                          <p key={index} className="text-gray-300">
+                            {paragraph}
+                          </p>
+                        ))}
+                      </div>
+                      {session.notes && (
+                        <div className="mt-4 rounded bg-midnight-800 p-3">
+                          <p className="text-sm italic text-gray-400">{session.notes}</p>
+                        </div>
+                      )}
+                    </CardContent>
                   </div>
 
-                  {session.notes && (
-                    <div className="mt-4 rounded bg-midnight-800 p-3">
-                      <p className="text-sm italic text-gray-400">{session.notes}</p>
+                  {/* Imagem condicional - só mostra se session.image existir */}
+                  {session.image && (
+                    <div className="md:w-1/3 bg-midnight-800 flex items-center justify-center p-6">
+                      <img
+                        src={session.image}
+                        alt={`Imagem da sessão de ${session.date}`}
+                        className="w-full h-48 md:h-64 object-cover rounded-md shadow-md"
+                      />
                     </div>
                   )}
-                </CardContent>
+                </div>
               </Card>
             ))}
           </div>
@@ -95,10 +108,15 @@ const sessions = [
   {
     id: "session-03-06-2025",
     date: "03/06/2025",
+    image: "/imagens/sessao-03-06-2025.jpg", // ← Exemplo de imagem específica
     summary: [
-      "A coterie descobre que o lobisomem Michael Bayle realmente amava Grace. Os lobisomens vão embora da cidade. Victor conta a Nadine seus planos e a proibe de contar a qualquer um.",
-      "A polícia quase descobriu os planos da coterie mas Desmond e Nadine os enganam. Helena fechou negócios com capangas de Capone e ganhou influência com isso. Fim dessa história.",
-      "Dia em que ocorreram os eventos da sessão: 31/10/1929.",
+      "É noite de Halloween. Mas a cidade ainda sente o impacto da queda da bolsa, por isso, as ressonâncias no sangue do gado continuam sempre limitadas à cólera e à melancolia. O que talvez explique os acontecimentos da noite. Nadine procura representantes de seu clã para firmar seu compromisso de concorrer à primogenitura. Fica surpresa ao encontrar seu senhor, Victor Bloodwood no meio deles.",
+      "A Nadine tem intenção de desafiar o seu Senhor, que rebate dizendo que ela não passa de um peão nas mãos dele, e que ele em si não tem interesse algum na primogenitura. Nadine tenta em vão resistir às ordens de seu marido e senhor, mas o laço em que está presa lhe corrompe a vontade e ela cede aos caprichos de seu amo. Victor fala de seus planos para com os baixos clãs da cidade, Ravnos inclusos, e parece garantir que não haverá embrólios entre os baixos clãs e a Torre, porém, fica claro para todos que ele deixará Nadine em rota de colisão com os interesses da coterie, pois ele a ordena segredo absoluto.",
+      "Ao voltar para o Refúgio, Nadine demonstra toda sua frustração destruindo os móveis de seu quarto. Mesmo estando em laço, Nadine faz o que pode para alertar a Coterie sobre os planos de Victor, mas é impedida cruelmente de dizer qualquer coisa, no entanto, Emilie usa seus poderes de Auspícios e obtém informações muito úteis no futuro.",
+      "Em uma breve reunião, a coterie entende que Nadine fará tudo pelo seu senhor, no entanto, assumirão o risco e não a deixarão de lado a menos que seja estritamente necessário.",
+      "Helena revela seus planos de receber Al Capone na cidade. A coterie se divide. Desmond e Nadine contam com os carniçais Malcom, Alfredo e Vix, para trocar a carga que estava sendo traficada por lobisomens e conseguem fazer isso literalmente debaixo dos narizes deles. A polícia quase descobre os planos da coterie, mas Desmond e Nadine os enganam.",
+      "Enquanto isso, Emilie, Étienne e Helena seguem para a casa da advogada Grace Thompson, pilar de Helena. A coterie descobre que o lobisomem Michael Bayle realmente amava Grace, mas ambos lobisomens estavam saindo da cidade. Ao que deu a entender, ambos lobisomens estavam fugindo da polícia, mas o verdadeiro motivo por trás das ações deles permanece um mistério.",
+      "Helena fecha com sucesso os negócios com capangas de Capone e ganha influência com isso."
     ],
     notes: "8 pontos de Experiência para Desmond, Emilie, Étienne, Helena e Nadine.",
   },
@@ -167,7 +185,7 @@ const sessions = [
     date: "15/04/2025",
     summary: [
       "A coterie confronta os caitiffs responsáveis pelo sequestro de Victor e Josephine. Durante o conflito, Etiene bebe o sangue de Nadine, criando um vínculo inesperado entre eles. Nadine, desestabilizada pela situação, entra em frenesi e quase mata Helena.",
-      "Um dos caitiffs, Jack, que demonstra domínio de Proteanismo nível 3, consegue escapar, enquanto os demais são eliminados. Kael Vane ascende à posição de primogênito, mas fica em laço de sangue com William Crawford, comprometendo sua independência.",
+      "Um dos caitifs, Jack, que demonstra domínio de Proteanismo nível 3, consegue escapar, enquanto os demais são eliminados. Kael Vane ascende à posição de primogênito, mas fica em laço de sangue com William Crawford, comprometendo sua independência.",
       "Desmond é nomeado xerife interino, assumindo temporariamente as responsabilidades de manter a ordem na cidade. Victor e Nadine se retiram para locais seguros para recuperar-se de seus ferimentos.",
     ],
   },
@@ -261,13 +279,6 @@ const sessions = [
       "Evelin percebe que um Setita os observa à distância, indicando que estão sendo monitorados. Com o amanhecer se aproximando, a coterie se retira para descansar, deixando muitas questões sem resposta.",
     ],
     notes: "A história continua...",
-  },
-  {
-    id: "session-03-03-2025",
-    date: "03/03/2025",
-    summary: [
-      "Lafonteine mata Bill e da uma surra em Desmond. A coterie traduz o livro e descobre que tem um matusalém gangrel no Bayu. Todos enfrentam lembranças de seu passado. Helena descobre que não tem lobisomens no Bayu e Evelyn desconfia q Xerife Abdull mentiu e manipulou Inês para ela pensar que tinha lobisomens. Victor traz um bebê a Nadine mas dá uma surra nela pois ela dormiu ao lado de Etiene. Desmond e descobre que o Tzimisce Charles Kowalski criou a gangue de carniçais conhecidos como o homem do machado como um forma de experimento. Mas tanto Kowalski e Lafonteine vão embora de Nova Orleans. Evelyn tem problemas com suas visões mas bebe novamente o sangue de Desmond aumentando o laço de sangue pra 4.",
-    ],
   },
   {
     id: "session-28-01-2025",
