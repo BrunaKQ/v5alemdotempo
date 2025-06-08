@@ -16,7 +16,7 @@ export default function LouisBeaumontPage() {
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-60" />
           <div
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: "url('/images/louis-beaumont-bg.jpg')" }}
+            style={{ backgroundImage: "url('/images/louis-beaumont-bg.png')" }}
           />
           <div className="absolute bottom-0 left-0 p-8">
             <h1 className="font-serif text-5xl font-bold text-silver-200">Louis Beaumont</h1>
