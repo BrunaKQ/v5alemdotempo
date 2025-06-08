@@ -334,25 +334,26 @@ const characters = [
     youtubeVideoUrl: "0GUaTuCbxvE", // Substitua por ID real
   },
   {
-    id: "etienne",
-    name: "Étienne Moreau",
-    image: "/images/etienne.jpg",
-    clan: "Tremere",
-    generation: 10,
-    sect: "Camarilla",
-    icon: "🔮",
-    sire: "Alana de Montreuil",
-    birth: "02/11/1831",
-    embrace: "23/08/1793",
-    location: "Garden District",
-    nature: "Revoltado",
-    demeanor: "Intelectual",
-    disciplines: ["Feitiçaria de Sangue", "Auspícios", "Dominação", "Ofuscação", "Proteanismo"],
-    background:
-      "Filho de uma família burguesa francesa, Étienne nasceu em Lyon no início da Revolução Francesa. Professor universitário e ativista político, ele lutou por ideais de liberdade, igualdade e fraternidade até ser transformado por Alana de Montreuil, uma Tremere que via nele o potencial para unir o saber humano às artes ocultas.",
-    story: [
-      "Étienne sempre foi movido por princípios revolucionários. Durante a Revolução Francesa, ele escrevia panfletos e liderava assembleias populares, defendendo reformas radicais na sociedade. Foi nesse contexto tenso que cruzou o caminho de Alana, uma vampira Tremere que via na desordem humana a oportunidade de moldar novas mentes.",
-    ],
-    youtubeVideoUrl: "NvsWUrcMBeg", // Substitua por ID real
-  },
+  "id": "etienne_moreau",
+  "name": "Étienne Moreau",
+  "image": "/images/etienne.jpg",
+  "clan": "Tremere",
+  "generation": 10,
+  "sect": "Camarilla",
+  "icon": "🔮",
+  "sire": "Alana Leclair",
+  "birth": "1768",
+  "embrace": "1794",
+  "location": "Garden District, Nova Orleans",
+  "nature": "Revoltado",
+  "demeanor": "Intelectual",
+  "disciplines": ["Feitiçaria de Sangue", "Auspícios", "Dominação", "Ofuscação", "Proteanismo"],
+  "background": "Filho de um renomado artesão e uma costureira em Lyon, França, Étienne demonstrou desde jovem grande inteligência e curiosidade por história, filosofia, ciências e ocultismo. Durante a Revolução Francesa, tornou-se um fervoroso defensor dos ideais de liberdade, igualdade e fraternidade, atuando como orador em assembleias populares. Sua mente brilhante chamou a atenção de Armand Deschamps, um vampiro Tremere disfarçado de professor, que o introduziu ao mundo sobrenatural. Após passar por intensos testes filosóficos e emocionais, foi abraçado por Alana Leclair em pleno Grande Terror.",
+  "story": [
+    "Após sua transformação, Étienne permaneceu na França por décadas, estudando magia de sangue e lidando com os fantasmas de sua vida mortal. O peso emocional da imortalidade e a mudança política da Europa o levaram a buscar um novo começo em Nova Orleans, em 1810.",
+    "Na América, integrou-se ao chantry local dos Tremere, desenvolveu suas habilidades arcanas e começou a investir em propriedades para sustentar seu estilo de vida discreto. Com o tempo, tornou-se professor universitário e mentor de Emanuelle Richardson, uma jovem prodígio cujo potencial intelectual o lembrava de si mesmo em seus anos de juventude.",
+    "Hoje, Étienne vive entre o ensino, a prática de magia e a vigilância de seu rebanho humano, mantendo vivos os ideais revolucionários em sua busca por evolução pessoal e coletiva, enquanto tenta equilibrar sua posição dentro do clã Tremere e sua visão crítica de estruturas de poder."
+  ],
+  "youtubeVideoUrl": "NvsWUrcMBeg"
+  }
 ]

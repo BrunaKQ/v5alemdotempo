@@ -100,7 +100,7 @@ export default function CoteriePage() {
             {/* Helena */}
             <section>
               <h2 className="mb-4 border-b border-blood-700 pb-2 font-serif text-2xl font-bold text-silver-200">
-                🕷️ Helena (Nosferatu)
+                🕷️ Helena Stryker (Nosferatu)
               </h2>
               <div className="space-y-2">
                 <Link
@@ -126,23 +126,7 @@ export default function CoteriePage() {
                   <BookOpen className="h-4 w-4 text-crimson-500" />
                   <span>Perfil de Étienne</span>
                 </Link>
-              </div>
-            </section>
-
-            {/* Richard */}
-            <section>
-              <h2 className="mb-4 border-b border-blood-700 pb-2 font-serif text-2xl font-bold text-silver-200">
-                ❓ Richard
-              </h2>
-              <div className="space-y-2">
-                <Link
-                  href="/coterie/richard"
-                  className="flex items-center gap-3 rounded p-3 text-gray-300 hover:bg-midnight-800 hover:text-silver-200"
-                >
-                  <BookOpen className="h-4 w-4 text-crimson-500" />
-                  <span>Perfil de Richard</span>
-                </Link>
-              </div>
+                </div>
             </section>
           </div>
         </div>
