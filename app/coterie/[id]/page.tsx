@@ -334,7 +334,7 @@ const characters = [
     youtubeVideoUrl: "0GUaTuCbxvE", // Substitua por ID real
   },
   {
-  "id": "etienne_moreau",
+  "id": "etienne",
   "name": "Étienne Moreau",
   "image": "/images/etienne.jpg",
   "clan": "Tremere",
