@@ -6,6 +6,7 @@ import { Menu, X } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { useMobile } from '@/hooks/use-mobile'
 import { usePathname } from 'next/navigation'
+import Image from 'next/image'
 
 export function SiteHeader() {
   const isMobile = useMobile()
@@ -33,11 +34,21 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-midnight-700 bg-black bg-opacity-90 backdrop-blur-sm">
       <div className="mx-auto flex h-16 max-w-5xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        {/* Logo */}
+        {/* Logo com Favicon */}
         <div className="flex items-center">
-          <Link href="/" className="flex flex-col items-center" title="Página inicial">
-            <span className="font-serif text-lg font-bold text-silver-200">Nova Orleans</span>
-            <span className="text-xs text-crimson-500">Além do Tempo</span>
+          <Link href="/" className="flex items-center" title="Página inicial">
+            {/* Favicon pequeno à esquerda do título */}
+            <Image
+              src="/favicon.png"
+              alt="Favicon - Nova Orleans"
+              width={32}
+              height={32}
+              className="rounded-full mr-3"
+            />
+            <div className="flex flex-col items-start">
+              <span className="font-serif text-lg font-bold text-silver-200">Nova Orleans</span>
+              <span className="text-xs text-crimson-500">Além do Tempo</span>
+            </div>
           </Link>
         </div>
 

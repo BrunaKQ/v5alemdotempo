@@ -36,9 +36,9 @@ export default function Home() {
               eterna.
             </p>
             <div className="mt-8 flex flex-col space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
-              <Link href="/artigos">
+              <Link href="/Crônicas">
                 <Button variant="default" className="bg-blood-800 hover:bg-blood-700">
-                  Ler Artigos
+                  Ler Crônicas
                   <ChevronRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
