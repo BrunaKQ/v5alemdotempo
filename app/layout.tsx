@@ -3,7 +3,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Nova Orleans - Além do Tempo',
-  description: 'Created with v0',
+  description: 'Explore as crônicas da Coterie Ordo Noctis.',
   generator: 'v0.dev',
 }
 
