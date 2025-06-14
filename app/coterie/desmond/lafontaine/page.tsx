@@ -22,7 +22,7 @@ export default function LaFontainePage() {
               <div className="flex items-center gap-4 mb-4">
                 <span className="text-5xl">☠️</span>
                 <h1 className="font-serif text-5xl font-bold text-silver-200 mb-0">
-                  LaFontaine - O Pirata das Sombras
+                  LaFontaine - O Coração Negro dos Mares
                 </h1>
               </div>
             </header>
