@@ -40,7 +40,7 @@ export default function AlanaLeclairPage() {
               {/* Imagem do personagem */}
               <div className="overflow-hidden rounded-lg border border-midnight-600 shadow-md">
                 <Image
-                  src="/images/alana-portrait.jpg"
+                  src="/images/Alana-Leclair.jpg"
                   alt="Alana Leclair"
                   width={320}
                   height={427}
