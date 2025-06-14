@@ -1,15 +1,13 @@
 'use client'
-
 import Link from 'next/link'
 import { ArrowLeft, ChevronRight } from 'lucide-react'
 import Image from 'next/image'
-
 import { SiteHeader } from '@/components/site-header'
 import { SiteFooter } from '@/components/site-footer'
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 
-export default function AlanaLeclairPage() {
+export default function LaFontainePage() {
   return (
     <div className="flex min-h-screen flex-col bg-black text-white">
       <SiteHeader />
@@ -20,34 +18,31 @@ export default function AlanaLeclairPage() {
             <ArrowLeft className="mr-2 h-4 w-4" />
             Voltar para Sires
           </Link>
-
           {/* Capa com imagem de fundo */}
           <div className="relative h-[300px] w-full overflow-hidden rounded-t-lg">
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-70" />
             <div
               className="absolute inset-0 bg-cover bg-center"
-              style={{ backgroundImage: "url('/images/alana-leclair.jpg')" }}
+              style={{ backgroundImage: "url('/images/la-fontaine.jpg')" }}
             ></div>
             <div className="absolute bottom-0 left-0 p-8">
-              <h1 className="font-serif text-5xl font-bold text-silver-200">Alana Leclair</h1>
-              <p className="mt-2 text-xl text-dodgerblue-500">A Arquimaga Tremere</p>
+              <h1 className="font-serif text-5xl font-bold text-silver-200">LaFontaine</h1>
+              <p className="mt-2 text-xl text-dodgerblue-500">O Pirata Eterno</p>
             </div>
           </div>
-
           <div className="grid gap-8 pt-8 md:grid-cols-3">
             {/* Sidebar com dados do personagem */}
             <div className="space-y-6">
               {/* Imagem do personagem */}
               <div className="overflow-hidden rounded-lg border border-midnight-600 shadow-md">
                 <Image
-                  src="/images/Alana-Leclair.jpg"
-                  alt="Alana Leclair"
+                  src="/images/LaFontaine.jpg"
+                  alt="LaFontaine"
                   width={320}
                   height={427}
                   className="w-full object-cover"
                 />
               </div>
-
               {/* Informações */}
               <Card className="bg-midnight-700 text-gray-200">
                 <CardHeader>
@@ -57,7 +52,7 @@ export default function AlanaLeclairPage() {
                   <div className="flex items-center justify-between">
                     <span className="text-gray-400">Clã:</span>
                     <Badge variant="outline" className="border-blood-600 text-blood-400">
-                      Tremere
+                      Não especificado
                     </Badge>
                   </div>
                   <div className="flex items-center justify-between">
@@ -70,21 +65,20 @@ export default function AlanaLeclairPage() {
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-gray-400">Localização:</span>
-                    <span className="text-silver-300">Nova Orleans</span>
+                    <span className="text-silver-300">Desconhecida</span>
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-gray-400">Status Atual:</span>
                     <Badge variant="outline" className="border-crimson-600 text-crimson-400">
-                      Viva
+                      Ativo
                     </Badge>
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-gray-400">Criador(a):</span>
-                    <span className="text-silver-300">Nyxara</span>
+                    <span className="text-silver-300">Desconhecido</span>
                   </div>
                 </CardContent>
               </Card>
-
               {/* Disciplinas */}
               <Card className="bg-midnight-700 text-gray-200">
                 <CardHeader>
@@ -92,22 +86,21 @@ export default function AlanaLeclairPage() {
                 </CardHeader>
                 <CardContent>
                   <ul className="list-disc space-y-2 pl-5 text-sm text-gray-300">
-                    <li><strong>Feitiçaria de Sangue</strong>: Manipulação mágica através de sangue próprio ou alheio.</li>
-                    <li><strong>Auspícios</strong>: Habilidade de ver além dos véus do tempo e da mentira.</li>
-                    <li><strong>Dominação</strong>: Capacidade de comandar a vontade dos mortais.</li>
+                    <li><strong>Dominação</strong>: Controle absoluto sobre mentes mortais e vampiros mais fracos.</li>
+                    <li><strong>Potência</strong>: Força física sobre-humana, capaz de derrotar inimigos múltiplas vezes seu tamanho.</li>
+                    <li><strong>Oblívio</strong>: Capacidade de se esconder da percepção dos outros, desaparecendo mesmo em plena luz.</li>
                   </ul>
                 </CardContent>
               </Card>
-
               {/* Música Tema */}
               <Card className="bg-midnight-700 text-gray-200">
                 <CardHeader>
                   <CardTitle className="font-serif text-xl text-silver-300">Música Tema</CardTitle>
-                </CardHeader>
+                </div>
                 <CardContent>
                   <div className="aspect-video w-full max-w-[400px] mx-auto">
                     <iframe
-                      src="https://www.youtube.com/embed/MwwWvhlrmq0" 
+                      src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE" 
                       title="YouTube video player"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
@@ -117,7 +110,6 @@ export default function AlanaLeclairPage() {
                 </CardContent>
               </Card>
             </div>
-
             {/* Conteúdo principal */}
             <div className="md:col-span-2 space-y-8">
               {/* Aparência e Presença */}
@@ -129,14 +121,13 @@ export default function AlanaLeclairPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-justify indent-8 leading-relaxed text-gray-300">
-                    Alana é uma mulher de beleza clássica e porte nobre. Seu olhar profundo e seus gestos lentos parecem carregar séculos de sabedoria e dor. Ela veste-se com elegância antiquada, preferindo tecidos escuros, bordados em prata e joias discretas que carregam poder oculto.
+                    LaFontaine é um homem imponente, de postura confiante e olhar que parece desarmar qualquer suspeita. Usa roupas de capitão pirata bem cuidadas, com detalhes em ouro e couro escuro. Seu sorriso é encantador, quase hipnótico, e sua voz transmite segurança e controle.
                   </p>
                   <p className="text-justify indent-8 leading-relaxed text-gray-300 mt-4">
-                    Fala com voz suave e pausada, como se cada palavra fosse parte de um ritual. Seus olhos claros têm um brilho sobrenatural — capazes de capturar sua atenção e fazê-lo sentir como se ela lesse sua alma com apenas um olhar.
+                    Ele tem uma aura magnética, capaz de atrair aliados e enganar inimigos com facilidade. Mesmo em combate ou situações tensas, mantém a calma e o domínio da situação, como se sempre tivesse o destino nas mãos.
                   </p>
                 </CardContent>
               </Card>
-
               {/* História Conhecida */}
               <Card className="bg-midnight-700 text-gray-200">
                 <CardHeader>
@@ -146,55 +137,32 @@ export default function AlanaLeclairPage() {
                 </CardHeader>
                 <CardContent className="space-y-6">
                   <p className="text-justify indent-8 leading-relaxed text-gray-300">
-                    Alana Leclair nasceu no final do século XVII em uma influente família nobre francesa cuja riqueza vinha de investimentos em rotas mercantis e vínculos profundos com a Igreja Católica. Desde cedo, demonstrava uma inteligência aguçada, um olhar atento e uma sede de conhecimento que ultrapassava o esperado para uma jovem de sua posição.
+                    Liderava seu navio há décadas sem jamais ter sua autoridade questionada. Com habilidades de navegação e liderança impressionantes, ensinou tudo o que sabia ao jovem Desmond, apresentando-lhe não apenas o mundo dos piratas, mas também os segredos mais obscuros de sua existência.
                   </p>
                   <p className="text-justify indent-8 leading-relaxed text-gray-300">
-                    Enquanto suas irmãs aprendiam etiqueta e boas maneiras, Alana se encantava com os livros antigos da biblioteca da família — especialmente os proibidos, os esquecidos, os que tratavam de coisas além da fé e da razão.
+                    Em uma missão aparentemente comum, revelou a verdadeira face de sua natureza: dominou sozinho uma escuna portuguesa usando poderes além da compreensão mortal. Mostrou a Desmond o que ele poderia se tornar — e o preço disso.
                   </p>
                   <p className="text-justify indent-8 leading-relaxed text-gray-300">
-                    Durante uma caçada com a família, Alana se perdeu na floresta ao cair da montaria. Na noite marcada para sua execução por heresia, quando as chamas já lamberam seus pés, a escuridão envolveu o céu de forma abrupta. As tochas se apagaram, e gritos ecoaram entre a multidão. De dentro da escuridão surgiu Nyxara — não mais como a gentil mulher da floresta, mas como uma criatura envolta em poder e fúria. Ela matou os inquisidores sem hesitação e salvou Alana das chamas, carregando-a para longe da cidade.
-                  </p>
-                  <p className="text-justify indent-8 leading-relaxed text-gray-300">
-                    Foi então que Alana conheceu sua verdadeira natureza. Nyxara era uma antiga vampira da linhagem Tremere, há séculos estudava a magia de sangue e os caminhos esquecidos da feitiçaria. Tocada pela inteligência e ousadia de Alana, decidiu não apenas salvá-la, mas também abraçá-la, tornando-a sua cria, herdeira e discípula.
-                  </p>
-                  <p className="text-justify indent-8 leading-relaxed text-gray-300">
-                    Alana renasceu das cinzas literalmente, como uma criatura da noite. Jurou nunca mais permitir que dogmas cegos suprimissem o saber verdadeiro. Tornou-se uma figura culta, influente e temida nos círculos ocultos, sempre com um sorriso perspicaz nos lábios e os olhos voltados para o passado — e para o poder que ele ainda guarda.
-                  </p>
-                  <p className="text-justify indent-8 leading-relaxed text-gray-300">
-                    Após seu Abraço por Nyxara, Alana passou décadas sob a tutela de sua Senhora. Adaptou-se à imortalidade com serenidade e propósito. Nyxara, satisfeita com seu progresso, levou Alana em peregrinações por várias cortes vampíricas da Europa, onde ela aprimorou sua percepção das intrigas e das máscaras necessárias para sobreviver entre os mortos-vivos.
-                  </p>
-                  <p className="text-justify indent-8 leading-relaxed text-gray-300">
-                    Com o tempo, Alana se tornou independente. Estabeleceu-se em Paris durante a efervescência do Iluminismo, atraída pelas ideias que desafiavam os velhos dogmas — embora soubesse que os homens que lideravam aquele movimento ainda temiam o verdadeiro poder oculto, especialmente aquele vindo de mulheres.
-                  </p>
-                  <p className="text-justify indent-8 leading-relaxed text-gray-300">
-                    Ela se manteve discreta, mas atenta. Observava as mudanças do mundo mortal com olhos pacientes, como quem lê um antigo grimório, esperando que a próxima página revelasse uma chave esquecida. Apesar de tudo, em seus momentos de solidão, pensava em Jules, um jovem que conhecera em sua juventude.
+                    Enquanto viajavam por portos como Viana do Castelo, Desmond começou a perceber mudanças em si mesmo: perda de memórias, sede insaciável e um sentimento crescente de pertencimento à escuridão. LaFontaine parecia saber disso desde o início.
                   </p>
                 </CardContent>
               </Card>
-
-              {/* Relação com Étienne */}
+              {/* Relação com Desmond */}
               <Card className="bg-midnight-700 text-gray-200">
                 <CardHeader>
                   <CardTitle className="flex items-center font-serif text-xl text-silver-300">
-                    <span className="mr-2 h-5 w-5 text-violet-400">🖤</span>Relação com Étienne
+                    <span className="mr-2 h-5 w-5 text-violet-400">🖤</span>Relação com Desmond
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-justify indent-8 leading-relaxed text-gray-300">
-                    Mais de um século depois, Alana observava discretamente os círculos acadêmicos, curiosa sobre jovens mortais com potencial oculto. Foi numa noite, durante uma conferência sobre história e ocultismo, que viu novamente algo familiar: Étienne Moreau.
+                    LaFontaine encontrou em Desmond não apenas um discípulo, mas um reflexo de si mesmo no passado. Tornou-se seu mentor, amigo e, eventualmente, seu mestre na escuridão. Usou paciência, carisma e manipulação para moldá-lo à sua imagem.
                   </p>
                   <p className="text-justify indent-8 leading-relaxed text-gray-300 mt-4">
-                    Ele era carismático, eloquente, e em meio a um discurso sobre rituais antigos e mitos modernos, Alana sentiu um frio familiar. A maneira como ele sorria, a firmeza de sua voz, os olhos claros que pareciam enxergar além das palavras — tudo nela gritava “Jules”. O corpo era diferente, mas a alma… ela juraria que era a mesma.
-                  </p>
-                  <p className="text-justify indent-8 leading-relaxed text-gray-300 mt-4">
-                    Alana passou a observar Étienne mais de perto, fascinada. Ela o testou — deixou pistas, documentos ocultos, fez com que ele encontrasse livros raros, fragmentos de conhecimento perdido. Étienne seguiu cada rastro com sede de verdade, e Alana soube que ele estava pronto. Mas havia mais: ela não o via apenas como talento. Via nele a chance de corrigir um erro do passado. De não se calar diante de um destino imposto.
-                  </p>
-                  <p className="text-justify indent-8 leading-relaxed text-gray-300 mt-4">
-                    Na última noite de Étienne como mortal, Alana o levou para sua mansão, onde selou seu destino. O abraçou, concedendo-lhe vida eterna, liberdade intelectual e um vínculo profundo com o oculto. Ela jamais lhe contou sobre Jules... ainda.
+                    Ao longo das semanas, transformou-o de um simples marinheiro em algo mais... e menos humano. Quando Desmond despertou coberto de sangue, após aceitar o convite de LaFontaine, percebeu que já não era mais o mesmo.
                   </p>
                 </CardContent>
               </Card>
-
               {/* Rumores */}
               <Card className="bg-midnight-700 text-gray-200">
                 <CardHeader>
@@ -205,46 +173,42 @@ export default function AlanaLeclairPage() {
                 <CardContent className="space-y-4">
                   <div className="rounded bg-midnight-800 p-4">
                     <p className="text-sm text-gray-300">
-                      Dizem que Alana pode encontrar almas antigas em corpos novos. Que Jules, o jovem farmacêutico, retornou sob diferentes formas, e que ela está destinada a reencontrá-lo.
+                      Dizem que LaFontaine não envelhece e que navega pelos mares há séculos, levando consigo aqueles que deseja corromper.
                     </p>
                   </div>
                   <div className="rounded bg-midnight-800 p-4">
                     <p className="text-sm text-gray-300">
-                      Há rumores de que Alana escreveu um diário secreto, onde registra tudo que aprendeu com Nyxara — e com outras entidades que sequer têm nome.
+                      Há rumores de que ele controla criaturas da névoa e usa-as para eliminar tripulações inteiras sem derramar uma gota de seu próprio sangue.
                     </p>
                   </div>
                   <div className="rounded bg-midnight-800 p-4">
                     <p className="text-sm text-gray-300">
-                      Alguns dizem que Alana não morreu queimada como bruxa — ela se sacrificou deliberadamente para aprender o que significa renascer das cinzas. E que faria isso de novo, se necessário.
+                      Alguns marinheiros juram ter visto o navio dele emergir do nada, cercado por uma neblina negra, como se vindo diretamente do inferno.
                     </p>
                   </div>
                 </CardContent>
               </Card>
-
               {/* Citação famosa */}
               <div className="rounded bg-midnight-800 p-4">
-                <p className="italic text-silver-400">“O conhecimento verdadeiro não vem dos altares, mas das sombras que eles tentam esconder.” – Alana Leclair</p>
-                <p className="mt-2 text-right text-sm text-gray-500">— Escrito em seu diário perdido</p>
+                <p className="italic text-silver-400">“Você viu um homem, UM homem conquistar um navio sozinho… e você não viu nada ainda.” – LaFontaine</p>
+                <p className="mt-2 text-right text-sm text-gray-500">— A Desmond, após o primeiro ataque conjunto</p>
               </div>
-
               {/* Links relacionados */}
               <div className="mt-8 space-y-4">
                 <Link
-                  href="/coterie/etienne"
+                  href="/coterie/desmond"
                   className="flex items-center justify-between rounded bg-midnight-800 p-3 text-sm hover:bg-midnight-600"
                 >
-                  <span>🔗 Ver perfil de Étienne Moreau</span>
+                  <span>🔗 Ver perfil de Desmond</span>
                   <ChevronRight className="h-4 w-4 text-amber-400" />
                 </Link>
-
                 <Link
                   href="/elysium"
-                  className="flex items-center justify-between rounded bg-midfast-800 p-3 text-sm hover:bg-midnight-600"
+                  className="flex items-center justify-between rounded bg-midnight-800 p-3 text-sm hover:bg-midnight-600"
                 >
                   <span>👑 Ver outros NPCs importantes</span>
                   <ChevronRight className="h-4 w-4 text-dodgerblue-500" />
                 </Link>
-
                 <Link
                   href="/sires"
                   className="flex items-center justify-between rounded bg-midnight-800 p-3 text-sm hover:bg-midnight-600"
