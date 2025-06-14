@@ -1,4 +1,6 @@
 'use client'
+
+import React from 'react'
 import Link from 'next/link'
 import { ArrowLeft, ChevronRight } from 'lucide-react'
 import Image from 'next/image'
@@ -36,7 +38,7 @@ export default function LaFontainePage() {
               {/* Imagem do personagem */}
               <div className="overflow-hidden rounded-lg border border-midnight-600 shadow-md">
                 <Image
-                  src="/images/LaFontaine.jpg"
+                  src="/images/la-fontaine.jpg"
                   alt="LaFontaine"
                   width={320}
                   height={427}
@@ -57,7 +59,7 @@ export default function LaFontainePage() {
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-gray-400">Geração:</span>
-                    <span className="text-silver-300">9ª</span>
+                    <span className="text-silver-300">Desconhecida</span>
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-gray-400">Século de Nascimento:</span>
@@ -65,7 +67,7 @@ export default function LaFontainePage() {
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-gray-400">Localização:</span>
-                    <span className="text-silver-300">Desconhecida</span>
+                    <span className="text-silver-300">Norte do Atlântico</span>
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-gray-400">Status Atual:</span>
@@ -96,7 +98,7 @@ export default function LaFontainePage() {
               <Card className="bg-midnight-700 text-gray-200">
                 <CardHeader>
                   <CardTitle className="font-serif text-xl text-silver-300">Música Tema</CardTitle>
-                </div>
+                </CardHeader>
                 <CardContent>
                   <div className="aspect-video w-full max-w-[400px] mx-auto">
                     <iframe
