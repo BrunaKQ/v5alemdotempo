@@ -41,8 +41,8 @@ export function SiteHeader() {
             <Image
               src="/favicon.png"
               alt="Favicon - Nova Orleans"
-              width={32}
-              height={32}
+              width={45}
+              height={45}
               className="rounded-full mr-3"
             />
             <div className="flex flex-col items-start">

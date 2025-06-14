@@ -36,7 +36,7 @@ export default function SiresPage() {
               className="flex items-center gap-3 rounded p-3 text-gray-300 hover:bg-midnight-800 hover:text-silver-200"
             >
               <BookOpen className="h-4 w-4 text-crimson-500" />
-              <span>☠️ Lafontaine — O Pirata Lasombra</span>
+              <span>☠️ Lafontaine — O Capitão do Lua Negra</span>
             </Link>
 
             {/* Kael */}

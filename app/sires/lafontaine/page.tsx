@@ -29,7 +29,7 @@ export default function LaFontainePage() {
             ></div>
             <div className="absolute bottom-0 left-0 p-8">
               <h1 className="font-serif text-5xl font-bold text-silver-200">LaFontaine</h1>
-              <p className="mt-2 text-xl text-dodgerblue-500">O Pirata das Sombras</p>
+              <p className="mt-2 text-xl text-dodgerblue-500">O Capitão do Lua Negra</p>
             </div>
           </div>
           <div className="grid gap-8 pt-8 md:grid-cols-3">
