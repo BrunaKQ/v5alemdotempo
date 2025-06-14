@@ -25,11 +25,11 @@ export default function LaFontainePage() {
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-70" />
             <div
               className="absolute inset-0 bg-cover bg-center"
-              style={{ backgroundImage: "url('/images/la-fontaine.jpg')" }}
+              style={{ backgroundImage: "url('/images/LaFontaine.jpg')" }}
             ></div>
             <div className="absolute bottom-0 left-0 p-8">
               <h1 className="font-serif text-5xl font-bold text-silver-200">LaFontaine</h1>
-              <p className="mt-2 text-xl text-dodgerblue-500">O Pirata Eterno</p>
+              <p className="mt-2 text-xl text-dodgerblue-500">O Pirata das Sombras</p>
             </div>
           </div>
           <div className="grid gap-8 pt-8 md:grid-cols-3">
@@ -38,7 +38,7 @@ export default function LaFontainePage() {
               {/* Imagem do personagem */}
               <div className="overflow-hidden rounded-lg border border-midnight-600 shadow-md">
                 <Image
-                  src="/images/la-fontaine.jpg"
+                  src="/images/LaFontaine.jpg"
                   alt="LaFontaine"
                   width={320}
                   height={427}
@@ -54,12 +54,12 @@ export default function LaFontainePage() {
                   <div className="flex items-center justify-between">
                     <span className="text-gray-400">Clã:</span>
                     <Badge variant="outline" className="border-blood-600 text-blood-400">
-                      Não especificado
+                      Lasombra
                     </Badge>
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-gray-400">Geração:</span>
-                    <span className="text-silver-300">Desconhecida</span>
+                    <span className="text-silver-300">9ª</span>
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-gray-400">Século de Nascimento:</span>
@@ -67,7 +67,7 @@ export default function LaFontainePage() {
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-gray-400">Localização:</span>
-                    <span className="text-silver-300">Norte do Atlântico</span>
+                    <span className="text-silver-300">Desconhecida</span>
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-gray-400">Status Atual:</span>
