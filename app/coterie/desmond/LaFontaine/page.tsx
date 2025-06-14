@@ -10,7 +10,7 @@ export default function LaFontainePage() {
       <main className="flex-1">
         <div className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8">
           <Link
-            href="/coterie/desmond/lafontaine"
+            href="/coterie/desmond"
             className="mb-6 inline-flex items-center text-sm text-silver-200 hover:text-amber-400"
           >
             <ArrowLeft className="mr-2 h-4 w-4" />
