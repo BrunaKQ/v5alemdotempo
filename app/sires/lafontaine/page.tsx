@@ -63,7 +63,7 @@ export default function LaFontainePage() {
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-gray-400">Século de Nascimento:</span>
-                    <span className="text-silver-300">XVII</span>
+                    <span className="text-silver-300">XV</span>
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-gray-400">Localização:</span>
