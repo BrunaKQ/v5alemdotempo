@@ -108,7 +108,7 @@ const sessions = [
   {
     id: "session-11-06-2025",
     date: "11/06/2025",
-    image: "/images/capa-sessao-11-06-2025.jpg", // ← Exemplo de imagem específica
+    image: "/images/capa-sessao-11-06-2025.png", // ← Exemplo de imagem específica
     summary: [
       "Lady Anne Bowesley, Senescal da Camarilla de Londres, chega a um Elísio lotado, acompanhada de cinco carniçais de porte nobre. Em reunião com a Príncipe Inês e a coterie, ela cobra um favor de vida devido ao Príncipe Mithras.",
       "A harpia Emilie confirma a dívida ao ler tocar um antigo livro de contas. Suas visões revelam que Inês fazia parte do que seria a futura corte de Nova Orleans a bordo de um navio Novo Mundo, porém foram atacados por uma nau repleta de lobisomens. No massacre, Guilhame de Vauclair — senhor de Inês — foi destruído. Mithras interveio, enfrentou a ameaça lupina e salvou Inês da morte final. Também é revelado que o ataque foi orquestrado por LaFontaine, que manipulou os lobisomens para atacar o grupo.",
