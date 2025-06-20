@@ -354,6 +354,6 @@ const characters = [
     "Na América, integrou-se ao chantry local dos Tremere, desenvolveu suas habilidades arcanas e começou a investir em propriedades para sustentar seu estilo de vida discreto. Com o tempo, tornou-se professor universitário e mentor de Emanuelle Richardson, uma jovem prodígio cujo potencial intelectual o lembrava de si mesmo em seus anos de juventude.",
     "Hoje, Étienne vive entre o ensino, a prática de magia e a vigilância de seu rebanho humano, mantendo vivos os ideais revolucionários em sua busca por evolução pessoal e coletiva, enquanto tenta equilibrar sua posição dentro do clã Tremere e sua visão crítica de estruturas de poder."
   ],
-  "youtubeVideoUrl": "NvsWUrcMBeg"
+  "youtubeVideoUrl": "Ptk_1Dc2iPY"
   }
 ]
