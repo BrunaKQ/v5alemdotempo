@@ -99,7 +99,7 @@ export default function InesLaCroixPage() {
                     </li>
                     <li className="flex items-center gap-2">
                       <span className="h-2 w-2 rounded-full bg-blood-500"></span>
-                      <span>Xerife Abdull (Gangrel)</span>
+                      <span>Xerife Helena Stryker (Escrava)</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <span className="h-2 w-2 rounded-full bg-blood-500"></span>
@@ -201,6 +201,10 @@ export default function InesLaCroixPage() {
                       "Quem vê o movimento das peças antes do oponente nunca perde a partida."
                     </p>
                     <p className="mt-2 text-right text-sm text-gray-500">— Lema pessoal de Inês LaCroix</p>
+                    <p className="italic text-silver-400">
+                      "Vocês têm fornicado?"
+                    </p>
+                    <p className="mt-2 text-right text-sm text-gray-500">— Indagação de Inês LaCroix à Étienne Moreau</p>
                   </div>
                 </CardContent>
               </Card>

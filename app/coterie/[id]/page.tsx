@@ -327,33 +327,33 @@ const characters = [
     demeanor: "Soturna",
     disciplines: ["Animalismo", "Potência", "Ofuscação", "Auspícios"],
     background:
-      "Margareth Ogden Armour nasceu em 1843 em Nova York, filha mais velha de Philip Danforth Armour, industrial da carne, e Malvina Belle Ogden, uma mulher de fé frágil e coração forte. Desde jovem, mostrou-se excepcionalmente inteligente, com interesse precoce por anatomia, medicina e patologia — áreas dominadas por homens na época. Helena se destacou desde cedo por sua inteligência afiada e fascínio pela anatomia, tornando-se médica-legista antes de seu desaparecimento em 1868, onde foi considerada morta em um acidente. Na verdade, ela foi abraçada por Kael Vane, então Diretor e mentor dela no Presbyterian Hospital of Chicago, após descobrir segredos que não deveria ter visto — verdades ocultas em cadáveres e documentos proibidos.",
+      "Margareth Ogden Armour nasceu em 1843 em Nova York, filha mais velha de Philip Danforth Armour, industrial da carne, e Malvina Belle Ogden, uma mulher de fé frágil e coração forte. Desde jovem, mostrou-se excepcionalmente inteligente, com interesse precoce por anatomia, medicina e patologia — áreas dominadas por homens na época. Helena se destacou desde cedo por sua inteligência afiada e fascínio pela morte, tornando-se médica-legista antes de seu desaparecimento em 1868, onde foi considerada morta em um acidente. Na verdade, ela foi abraçada por Kael Vane, então Diretor e mentor dela no Presbyterian Hospital of Chicago, após descobrir segredos que não deveria ter visto — verdades ocultas em cadáveres e documentos proibidos.",
     story: [
-      "Nos primeiros anos como vampira, Helena foi moldada por Kael como uma espiã silenciosa, uma observadora das sombras, treinada para ler corpos, extrair verdades e agir sem chamar atenção. Com o tempo, tornou-se mais do que uma cria: uma ferramenta indispensável nos jogos noturnos de poder entre a Camarilla e os fragmentos do Sabbat que se infiltravam na cidade.",
+      "Nos primeiros anos como vampira, Helena foi moldada por Kael como uma espiã silenciosa, uma observadora das sombras, treinada para ler corpos, extrair verdades e agir sem chamar atenção. Com o tempo, tornou-se mais do que uma cria: uma ferramenta indispensável nos jogos noturnos de poder entre a Camarilla e os fragmentos do Sabbat que se infiltravam na cidade. Atualmente conseguiu o cargo de Xerife da Camarilla de Nova Orleans, após ter conseguido lidar com um matusalém e um bando do Sabbat que estavam na cidade. O cargo, no entanto, não lhe veio sem alto custo: para assumir o posto, Helena teve que se submeter ao laço de sangue com a Príncipe Inês LaCroix.",
     ],
     youtubeVideoUrl: "0GUaTuCbxvE", // Substitua por ID real
   },
   {
-  "id": "etienne",
-  "name": "Étienne Moreau",
-  "image": "/images/etienne.jpg",
-  "clan": "Tremere",
-  "generation": 10,
-  "sect": "Camarilla",
-  "icon": "🔮",
-  "sire": "Alana Leclair",
-  "birth": "1768",
-  "embrace": "1794",
-  "location": "Garden District, Nova Orleans",
-  "nature": "Revoltado",
-  "demeanor": "Intelectual",
-  "disciplines": ["Feitiçaria de Sangue", "Auspícios", "Dominação", "Ofuscação", "Proteanismo"],
-  "background": "Filho de um renomado artesão e uma costureira em Lyon, França, Étienne demonstrou desde jovem grande inteligência e curiosidade por história, filosofia, ciências e ocultismo. Durante a Revolução Francesa, tornou-se um fervoroso defensor dos ideais de liberdade, igualdade e fraternidade, atuando como orador em assembleias populares. Sua mente brilhante chamou a atenção de Armand Deschamps, um vampiro Tremere disfarçado de professor, que o introduziu ao mundo sobrenatural. Após passar por intensos testes filosóficos e emocionais, foi abraçado por Alana Leclair em pleno Grande Terror.",
-  "story": [
+  id: "etienne",
+  name: "Étienne Moreau",
+  image: "/images/etienne.jpg",
+  clan: "Tremere",
+  generation: 10,
+  sect: "Camarilla",
+  icon: "🔮",
+  sire: "Alana Leclair",
+  birth: "1768",
+  embrace: "1794",
+  location: "Garden District, Nova Orleans",
+  nature: "Revoltado",
+  demeanor: "Intelectual",
+  disciplines: ["Feitiçaria de Sangue", "Auspícios", "Dominação", "Ofuscação", "Proteanismo"],
+  background: "Filho de um renomado artesão e uma costureira em Lyon, França, Étienne demonstrou desde jovem grande inteligência e curiosidade por história, filosofia, ciências e ocultismo. Durante a Revolução Francesa, tornou-se um fervoroso defensor dos ideais de liberdade, igualdade e fraternidade, atuando como orador em assembleias populares. Sua mente brilhante chamou a atenção de Armand Deschamps, um vampiro Tremere disfarçado de professor, que o introduziu ao mundo sobrenatural. Após passar por intensos testes filosóficos e emocionais, foi abraçado por Alana Leclair em pleno Grande Terror.",
+  story: [
     "Após sua transformação, Étienne permaneceu na França por décadas, estudando magia de sangue e lidando com os fantasmas de sua vida mortal. O peso emocional da imortalidade e a mudança política da Europa o levaram a buscar um novo começo em Nova Orleans, em 1810.",
     "Na América, integrou-se ao chantry local dos Tremere, desenvolveu suas habilidades arcanas e começou a investir em propriedades para sustentar seu estilo de vida discreto. Com o tempo, tornou-se professor universitário e mentor de Emanuelle Richardson, uma jovem prodígio cujo potencial intelectual o lembrava de si mesmo em seus anos de juventude.",
     "Hoje, Étienne vive entre o ensino, a prática de magia e a vigilância de seu rebanho humano, mantendo vivos os ideais revolucionários em sua busca por evolução pessoal e coletiva, enquanto tenta equilibrar sua posição dentro do clã Tremere e sua visão crítica de estruturas de poder."
   ],
-  "youtubeVideoUrl": "Ptk_1Dc2iPY"
+  youtubeVideoUrl: "Ptk_1Dc2iPY"
   }
 ]
