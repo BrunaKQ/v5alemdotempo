@@ -204,7 +204,7 @@ export default function InesLaCroixPage() {
                     <p className="italic text-silver-400">
                       "Vocês têm fornicado?"
                     </p>
-                    <p className="mt-2 text-right text-sm text-gray-500">— Indagação de Inês LaCroix à Étienne Moreau</p>
+                    <p className="mt-2 text-right text-sm text-gray-500">— Indagação de Inês LaCroix a Étienne Moreau</p>
                   </div>
                 </CardContent>
               </Card>
