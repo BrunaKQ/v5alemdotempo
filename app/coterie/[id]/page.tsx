@@ -262,7 +262,7 @@ const characters = [
       "Agora, como membro da coterie Ordo Noctis, Nadine luta para encontrar um equilíbrio entre sua natureza rebelde e a necessidade de cooperação. Sua função dentro do grupo é frequentemente a de catalisadora - aquela que impulsiona a ação quando outros hesitam.",
       "Apesar de sua aparência jovem e delicada, Nadine possui uma força interior que pode ser tanto inspiradora quanto destrutiva. Ela vê na coterie uma oportunidade de canalizar sua raiva de forma mais efetiva, mas ainda luta contra impulsos que a levam a agir sozinha.",
     ],
-    youtubeVideoUrl: "vW-HFy_XqZI", // 
+    youtubeVideoUrl: "PrSjlpWu0cw", // 
   },
   {
     id: "emilie",
